@@ -1,7 +1,7 @@
 (function (root) {
   'use strict';
 
-  const VERSION = '33';
+  const VERSION = '34';
   const APP = 'thai-japanese-navi';
   const CHECK_INTERVAL = 60000;
   const CHECK_TIMEOUT = 8000;
@@ -132,6 +132,8 @@
     const header = doc.querySelector('header');
     if (header) header.after(banner); else section.before(banner);
 
+    const headerRefresh = doc.getElementById('headerRefresh'), headerLabel = doc.getElementById('headerRefreshLabel'), headerStatus = doc.getElementById('headerUpdateStatus');
+    let headerRequested = false;
     let view = { phase: 'idle', version: Number(VERSION), latest: null, reason: '' };
     function render(state = view) {
       view = state;
@@ -151,6 +153,16 @@
         reloading: t('記録を残したまま、画面を読み直しています…', 'กำลังโหลดหน้าใหม่โดยเก็บประวัติการเรียนไว้…')
       };
       status.textContent = messages[state.phase] || messages.idle;
+      if (headerRefresh) {
+        headerRefresh.disabled = state.phase === 'reloading' || (headerRequested && state.phase === 'checking');
+        headerRefresh.setAttribute('aria-busy', String(headerRefresh.disabled));
+        headerRefresh.setAttribute('aria-label', t('学習記録を残して更新', 'อัปเดตโดยเก็บประวัติการเรียน'));
+        if (headerLabel) headerLabel.textContent = headerRefresh.disabled ? t('更新中…', 'กำลังอัปเดต…') : t('更新', 'อัปเดต');
+      }
+      if (headerStatus) {
+        headerStatus.hidden = !headerRequested;
+        headerStatus.textContent = headerRequested ? status.textContent : '';
+      }
       checkButton.disabled = state.phase === 'checking' || state.phase === 'reloading';
       reloadButton.hidden = !validVersion(state.latest);
       reloadButton.disabled = !['current', 'available', 'blocked'].includes(state.phase);
@@ -163,6 +175,12 @@
     const controller = create({ canReload: () => reloadBlocker(doc), onState: render });
     checkButton.onclick = () => controller.check({ manual: true });
     reloadButton.onclick = () => controller.reload();
+    if (headerRefresh) headerRefresh.onclick = async () => {
+      if (headerRefresh.disabled) return;
+      headerRequested = true;
+      await controller.check({ manual: true });
+      controller.reload();
+    };
     const onResume = () => { if (!doc.hidden) controller.check(); };
     root.addEventListener('focus', onResume);
     root.addEventListener('pageshow', event => { if (!doc.hidden) controller.check({ force: event.persisted === true }); });

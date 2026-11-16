@@ -10,6 +10,10 @@ let sourceItems=[],baseItems=[],serviceItems=[],all=[],current='words',language=
 let currentUnitId='',flowMode='learn',testSession=null,lastTestResult=null,reviewIds=null,flowNotice='';
 const t=(ja,th)=>language==='ja'?ja:th;
 const learning=window.ThaiNaviLearningSets.create({preferences:prefs,courses,onStorage:storageFeedback});
+// Keep unchanged controls alive when focus/storage events refresh the page.
+const markupCache=new WeakMap();
+function updateMarkup(id,html){const node=$(id);if(markupCache.get(node)===html)return false;node.innerHTML=html;markupCache.set(node,html);return true;}
+
 function storageFeedback(saved){if(!saved)storageWarning=true;$('storageNotice').hidden=!storageWarning;$('storageNotice').textContent=t('このブラウザでは保存できません。設定と学習記録は、このページを開いている間だけ保持されます。','เบราว์เซอร์นี้ไม่อนุญาตให้บันทึก การตั้งค่าและความคืบหน้าจะอยู่เฉพาะระหว่างที่เปิดหน้านี้');}
 const pendingPersonalChanges=new Map();
 function savedIds(key,fallback){
@@ -33,7 +37,8 @@ function applyProfile(){
  all=courses.project(sourceItems,profile);
  learning.setRows(all);
 }
-function renderSections(){$('sections').innerHTML=types.map(([key,ja,th,emoji,total])=>{const p=learning.progress(key,language);return `<button class="section ${current===key?'active':''}" data-section="${key}" aria-pressed="${current===key}"><span class="emoji">${emoji}</span><b>${language==='ja'?ja:th}</b><small>${total} ${language==='ja'?'項目':'รายการ'}${p.passed?` · ✓ ${p.percent}%`:''}</small></button>`;}).join('');$('sections').querySelectorAll('button').forEach(b=>b.addEventListener('click',()=>{current=b.dataset.section;resetLearningFlow();clearBrowseFilters();renderSections();refresh();document.querySelector('#listTitle').scrollIntoView({behavior:'smooth',block:'start'});}));}
+function renderSections(){return learning.batch(renderSectionsBody);}
+function renderSectionsBody(){updateMarkup('sections',types.map(([key,ja,th,emoji,total])=>{const p=learning.progress(key,language);return `<button class="section ${current===key?'active':''}" data-section="${key}" aria-pressed="${current===key}"><span class="emoji">${emoji}</span><b>${language==='ja'?ja:th}</b><small>${total} ${language==='ja'?'項目':'รายการ'}${p.passed?` · ✓ ${p.percent}%`:''}</small></button>`;}).join(''));$('sections').querySelectorAll('button').forEach(b=>b.onclick=()=>{current=b.dataset.section;resetLearningFlow();clearBrowseFilters();renderSections();refresh();document.querySelector('#listTitle').scrollIntoView({behavior:'instant',block:'start'});});}
 function inScene(x){return current!=='service'||serviceScene==='all'||x.scene===serviceScene;}
 function hasBrowseFilters(){return Boolean($('search').value.trim()||onlyFav||(current==='service'&&serviceScene!=='all'));}
 function clearBrowseFilters(){onlyFav=false;serviceScene='all';$('onlyFav').classList.remove('selected');$('search').value='';$('serviceScene').value='all';}
@@ -55,28 +60,30 @@ function filtered(){
  if(!hasBrowseFilters()){const unit=getCurrentUnit();return (unit?.rows||[]).filter(row=>!reviewIds||reviewIds.includes(row.id));}
  return all.filter(x=>x.type===current&&inScene(x)&&(!onlyFav||favorites.has(x.id))&&(!q||[japaneseText(x),x.th,x.thRoman,x.thKana,japanese.forItem(x)?.kana,japanese.forItem(x)?.roman,japanese.forItem(x)?.text,courses.context(x,language,'japanese'),courses.context(x,language,'thai')].join(' ').toLocaleLowerCase().includes(q)));
 }
-function refresh(){
+function refresh(){return learning.batch(refreshBody);}
+function refreshBody(){
  shown=filtered();if(at>=shown.length)at=Math.max(0,shown.length-1);
  $('listTitle').textContent=types.find(x=>x[0]===current)?.[language==='ja'?1:2];
  $('resultCount').textContent=hasBrowseFilters()?t(`${shown.length}件の検索結果`,`${shown.length} รายการที่พบ`):t(`全${types.find(x=>x[0]===current)?.[4]}項目`,`${types.find(x=>x[0]===current)?.[4]} รายการ`);
  $('serviceTools').hidden=current!=='service';$('serviceReadingGuide').hidden=current!=='service'||language==='th';$('japaneseReadingGuide').hidden=language!=='th';$('onlyFav').setAttribute('aria-pressed',String(onlyFav));$('random').disabled=shown.length<2;
  if(flowMode==='learn')renderCard();renderLearningHub();renderProgress();
 }
-function renderLearningHub(){
+function renderLearningHub(){return learning.batch(renderLearningHubBody);}
+function renderLearningHubBody(){
  const units=learning.units(current),unit=getCurrentUnit(),status=learning.status(unit,language),testing=flowMode!=='learn';
  $('studyWorkspace').hidden=testing;$('studyWorkspace').inert=testing;$('unitListDetails').hidden=testing;$('quizPanel').hidden=!testing;
  $('unitLabel').textContent=current==='words'?t('10語ずつ覚える','เรียนครั้งละ 10 คำ'):t('10項目ずつ覚える','เรียนครั้งละ 10 ประโยค');
- $('unitSelect').innerHTML=units.map(x=>`<option value="${safe(x.id)}">${learning.status(x,language).passed?'✓ ':''}${t('セット','ชุด')} ${x.number} · ${x.start}–${x.end}</option>`).join('');$('unitSelect').value=unit?.id||'';$('unitSelect').disabled=testing||!unit;
+ updateMarkup('unitSelect',units.map(x=>`<option value="${safe(x.id)}">${learning.status(x,language).passed?'✓ ':''}${t('セット','ชุด')} ${x.number} · ${x.start}–${x.end}</option>`).join(''));$('unitSelect').value=unit?.id||'';$('unitSelect').disabled=testing||!unit;
  const phase=flowMode==='result'&&lastTestResult?.wrongIds.length===0&&status.passed?2:flowMode==='learn'?0:1;
- $('unitSteps').innerHTML=[t('1 見て覚える','1 ดูและจำ'),t('2 テスト','2 ทดสอบ'),t('3 合格','3 ผ่าน')].map((label,index)=>`<li class="${phase===index?'active':index<phase?'done':''}"${phase===index?' aria-current="step"':''}>${label}</li>`).join('');
+ updateMarkup('unitSteps',[t('1 見て覚える','1 ดูและจำ'),t('2 テスト','2 ทดสอบ'),t('3 合格','3 ผ่าน')].map((label,index)=>`<li class="${phase===index?'active':index<phase?'done':''}"${phase===index?' aria-current="step"':''}>${label}</li>`).join(''));
  $('unitSummary').textContent=!unit?t('教材を読み込み中です…','กำลังโหลดบทเรียน…'):testing?t(`セット ${unit.number} · ${unit.total}項目`, `ชุด ${unit.number} · ${unit.total} รายการ`):hasBrowseFilters()?t('セット以外の単語も検索できます。','ค้นหาคำจากชุดอื่นได้ด้วย'):status.passed?t(`✓ セット ${unit.number} 合格済み`,`✓ ชุด ${unit.number} ผ่านแล้ว`):reviewIds?t(`復習 ${reviewIds.length}項目 · 正解済み ${status.correct}/${status.total}`,`ทบทวน ${reviewIds.length} รายการ · ตอบถูกแล้ว ${status.correct}/${status.total}`):t(`見た ${status.seen}/${status.total} · 正解 ${status.correct}/${status.total}`,`ดูแล้ว ${status.seen}/${status.total} · ตอบถูก ${status.correct}/${status.total}`);
  $('unitPrimary').hidden=testing;
  $('unitPrimary').disabled=!unit||(!hasBrowseFilters()&&!status.ready);
  $('unitPrimary').textContent=hasBrowseFilters()?t('このセットに戻る','กลับไปชุดนี้'):status.passed?t('もう一度テスト','ทดสอบอีกครั้ง'):status.correct?t('残りの単語をテスト','ทดสอบคำที่เหลือ'):status.ready?t('テストを始める','เริ่มทดสอบ'):t(`${status.total-status.seen}項目を見たらテストへ`,`ดูอีก ${status.total-status.seen} รายการแล้วทดสอบ`);
  $('unitNotice').textContent=flowNotice;$('unitNotice').hidden=!flowNotice;
  $('unitListTitle').textContent=t(`このセットの${unit?.total||0}項目・合格チェック`,`รายการในชุดนี้ ${unit?.total||0} รายการและผลผ่าน`);
- if(!testing){$('unitList').innerHTML=(unit?.rows||[]).map(row=>{const read=japanese.forItem(row),passed=status.passedIds.includes(row.id);return `<li><button type="button" data-study-id="${safe(row.id)}" class="${shown[at]?.id===row.id?'current':''}"><span class="unitCheck" aria-label="${passed?t('合格','ผ่าน'):t('未合格','ยังไม่ผ่าน')}">${passed?'✓':'○'}</span><span class="unitItemWords"><span lang="ja">${safe(japaneseText(row))}</span><small lang="ja">${safe(read?.kana||'')} · ${safe(read?.roman||'')}</small><span lang="th">${safe(row.th)}</span></span></button></li>`;}).join('');
- $('unitList').querySelectorAll('[data-study-id]').forEach(button=>button.onclick=()=>{clearBrowseFilters();reviewIds=null;shown=unit.rows.slice();at=Math.max(0,shown.findIndex(row=>row.id===button.dataset.studyId));refresh();$('card').scrollIntoView({behavior:'smooth',block:'start'});});}
+ if(!testing){updateMarkup('unitList',(unit?.rows||[]).map(row=>{const read=japanese.forItem(row),passed=status.passedIds.includes(row.id);return `<li><button type="button" data-study-id="${safe(row.id)}" class="${shown[at]?.id===row.id?'current':''}"><span class="unitCheck" aria-label="${passed?t('合格','ผ่าน'):t('未合格','ยังไม่ผ่าน')}">${passed?'✓':'○'}</span><span class="unitItemWords"><span lang="ja">${safe(japaneseText(row))}</span><small lang="ja">${safe(read?.kana||'')} · ${safe(read?.roman||'')}</small><span lang="th">${safe(row.th)}</span></span></button></li>`;}).join(''));
+ $('unitList').querySelectorAll('[data-study-id]').forEach(button=>button.onclick=()=>{clearBrowseFilters();reviewIds=null;shown=unit.rows.slice();at=Math.max(0,shown.findIndex(row=>row.id===button.dataset.studyId));refresh();$('card').scrollIntoView({behavior:'instant',block:'start'});});}
 }
 function japaneseText(row){return courses.japaneseText(row);}
 function lessonContextHtml(row,side='japanese'){
@@ -107,16 +114,17 @@ function japaneseReadingHtml(row){
  return `${japaneseCoreReadingsHtml(row)}<div class="jpReadingHeader"><span class="jpReadingLabel">คำอ่านไทยโดยประมาณ</span><button type="button" class="jpHintToggle" id="toggleJapaneseThaiHint" aria-pressed="${showThaiHints()}">${showThaiHints()?'ซ่อนคำอ่านไทย':'แสดงคำอ่านไทย'}</button></div><div class="japaneseThaiHint jpThaiCardHint" lang="th">${thaiCueMarkup(reading)}</div>${reading.flags.includes('blank')?'<p class="jpTemplateNote">แทน … ด้วยชื่อของคุณ</p>':''}`;
 }
 function renderCard(){
+ let cardChanged=false;
  const r=shown[at];const nextSpeechKey=r?JSON.stringify([r.id,language,speech.textFor(r,'ja-JP'),r.th]):'';
  if(nextSpeechKey!==speechCardKey){if(!$('kanaDialog').open)stopSpeech();speechCardKey=nextSpeechKey;}
  ['favBtn','learned','prev','next'].forEach(id=>$(id).disabled=!r);
  if(!r){$('favBtn').textContent=t('☆ お気に入りに追加','☆ เพิ่มในรายการโปรด');$('favBtn').classList.remove('on');$('favBtn').setAttribute('aria-pressed','false');$('favBtn').setAttribute('aria-label',t('お気に入りに追加','เพิ่มในรายการโปรด'));$('learned').textContent=t('○ 覚えた','○ จำได้แล้ว');$('learned').setAttribute('aria-pressed','false');}
- if(current==='service'?serviceLoading:baseLoading){$('card').innerHTML=`<div class="empty">${t('教材を読み込み中です…','กำลังโหลดบทเรียน…')}</div>`;return;}
- if(current==='service'?serviceError:baseError){$('card').innerHTML=`<div class="empty">${t('この教材を読み込めませんでした。ページを再読み込みしてください。','โหลดบทเรียนนี้ไม่สำเร็จ กรุณาโหลดหน้านี้ใหม่')}</div>`;return;}
+ if(current==='service'?serviceLoading:baseLoading){cardChanged=updateMarkup('card',`<div class="empty">${t('教材を読み込み中です…','กำลังโหลดบทเรียน…')}</div>`);return;}
+ if(current==='service'?serviceError:baseError){cardChanged=updateMarkup('card',`<div class="empty">${t('この教材を読み込めませんでした。ページを再読み込みしてください。','โหลดบทเรียนนี้ไม่สำเร็จ กรุณาโหลดหน้านี้ใหม่')}</div>`);return;}
  if(!r){
   const hasQuery=Boolean($('search').value.trim());
   const message=hasQuery?t('一致する表現がありません。','ไม่พบคำหรือประโยคที่ตรงกับคำค้นหา'):onlyFav?t('このテーマのお気に入りはまだありません。','ยังไม่มีรายการโปรดในหัวข้อนี้'):t('表示できる表現がありません。','ไม่มีคำหรือประโยคให้แสดง');
-  $('card').innerHTML=`<div class="empty"><p>${message}</p>${hasQuery||onlyFav?`<button type="button" class="toolBtn" id="clearLessonFilter">${hasQuery?t('検索をクリア','ล้างคำค้นหา'):t('すべて表示','แสดงทั้งหมด')}</button>`:''}</div>`;
+  cardChanged=updateMarkup('card',`<div class="empty"><p>${message}</p>${hasQuery||onlyFav?`<button type="button" class="toolBtn" id="clearLessonFilter">${hasQuery?t('検索をクリア','ล้างคำค้นหา'):t('すべて表示','แสดงทั้งหมด')}</button>`:''}</div>`);
   if($('clearLessonFilter'))$('clearLessonFilter').onclick=()=>{if(hasQuery)$('search').value='';else{onlyFav=false;$('onlyFav').classList.remove('selected');}at=0;refresh();};
   return;
  }
@@ -126,11 +134,11 @@ function renderCard(){
  const checked=learning.status(rowUnit,language).passedIds.includes(r.id);
  const top=`<div class="cardTop"><span><span class="tag">${safe(tag)}</span>${checked?`<span class="unitPassedLabel">${t('✓ テスト合格','✓ ผ่านการทดสอบ')}</span>`:''}</span><span class="count">${at+1} / ${shown.length}</span></div>`;
  if(language==='th'){
-  $('card').innerHTML=top+`<div class="langLabel">ภาษาญี่ปุ่น</div><div class="phrase" lang="ja">${safe(japaneseText(r))}</div>${japaneseReadingHtml(r)}${lessonContextHtml(r)}<div class="row jpAudioActions"><button class="speak dark" data-speak="ja-JP">🔊 ฟังเสียงญี่ปุ่น</button><button class="toolBtn" id="slowBtn">ฟังแบบช้า</button></div><div class="jpMeaning"><div class="langLabel">ความหมายภาษาไทย</div><div class="phrase thai" lang="th">${safe(r.th)}</div>${lessonContextHtml(r,'thai')}<div class="row" style="margin-top:12px"><button class="speak" data-speak="th-TH">🔊 ฟังความหมายไทย</button></div></div><p class="note" id="voiceStatus" aria-live="polite"></p>`;
+  cardChanged=updateMarkup('card',top+`<div class="langLabel">ภาษาญี่ปุ่น</div><div class="phrase" lang="ja">${safe(japaneseText(r))}</div>${japaneseReadingHtml(r)}${lessonContextHtml(r)}<div class="row jpAudioActions"><button class="speak dark" data-speak="ja-JP">🔊 ฟังเสียงญี่ปุ่น</button><button class="toolBtn" id="slowBtn">ฟังแบบช้า</button></div><div class="jpMeaning"><div class="langLabel">ความหมายภาษาไทย</div><div class="phrase thai" lang="th">${safe(r.th)}</div>${lessonContextHtml(r,'thai')}<div class="row" style="margin-top:12px"><button class="speak" data-speak="th-TH">🔊 ฟังความหมายไทย</button></div></div><p class="note" id="voiceStatus" aria-live="polite"></p>`);
  }else{
-  $('card').innerHTML=top+`<div class="langLabel">日本語</div><div class="phrase" lang="ja">${safe(japaneseText(r))}</div>${japaneseCoreReadingsHtml(r)}${lessonContextHtml(r)}<div class="row" style="margin-top:15px"><button class="speak" data-speak="ja-JP">🔊 日本語</button></div><div class="separator"></div><div class="langLabel">タイ語</div><div class="phrase thai" lang="th">${safe(r.th)}</div><div class="read"><span lang="th-Latn">${safe(r.thRoman)}</span> / <span lang="ja">${safe(r.thKana)}</span></div>${lessonContextHtml(r,'thai')}<div class="row" style="margin-top:15px"><button class="speak dark" data-speak="th-TH">🔊 タイ語</button><button class="toolBtn" id="slowBtn">ゆっくり再生</button></div><p class="note" id="voiceStatus" aria-live="polite"></p>`;
+  cardChanged=updateMarkup('card',top+`<div class="langLabel">日本語</div><div class="phrase" lang="ja">${safe(japaneseText(r))}</div>${japaneseCoreReadingsHtml(r)}${lessonContextHtml(r)}<div class="row" style="margin-top:15px"><button class="speak" data-speak="ja-JP">🔊 日本語</button></div><div class="separator"></div><div class="langLabel">タイ語</div><div class="phrase thai" lang="th">${safe(r.th)}</div><div class="read"><span lang="th-Latn">${safe(r.thRoman)}</span> / <span lang="ja">${safe(r.thKana)}</span></div>${lessonContextHtml(r,'thai')}<div class="row" style="margin-top:15px"><button class="speak dark" data-speak="th-TH">🔊 タイ語</button><button class="toolBtn" id="slowBtn">ゆっくり再生</button></div><p class="note" id="voiceStatus" aria-live="polite"></p>`);
  }
- if(r.type==='service'){
+ if(cardChanged&&r.type==='service'){
   const gender=window.ThaiNaviProfile.getProfile()?.gender;
   if(language==='ja'&&!['male','female'].includes(gender)){
    const formNote=document.createElement('p');formNote.className='serviceFormNote';
@@ -138,7 +146,7 @@ function renderCard(){
   }
  }
  const supplement=language==='ja'?r.noteJa:r.noteTh;
- if(supplement){const detail=document.createElement('details');detail.className='lessonSupplement';const summary=document.createElement('summary');summary.textContent=t('言葉の補足','เพิ่มเติมเกี่ยวกับคำนี้');const body=document.createElement('p');body.textContent=supplement;detail.append(summary,body);$('voiceStatus').before(detail);}
+ if(cardChanged&&supplement){const detail=document.createElement('details');detail.className='lessonSupplement';const summary=document.createElement('summary');summary.textContent=t('言葉の補足','เพิ่มเติมเกี่ยวกับคำนี้');const body=document.createElement('p');body.textContent=supplement;detail.append(summary,body);$('voiceStatus').before(detail);}
  $('voiceStatus').textContent=speechMessage;
  $('card').querySelectorAll('[data-speak]').forEach(b=>{b.dataset.utterance=speech.textFor(r,b.dataset.speak);b.onclick=()=>speak(b.dataset.utterance,b.dataset.speak,false);});
  const learningLocale=language==='th'?'ja-JP':'th-TH';$('slowBtn').dataset.utterance=speech.textFor(r,learningLocale);$('slowBtn').onclick=()=>speak($('slowBtn').dataset.utterance,learningLocale,true);
@@ -193,10 +201,10 @@ function startLearningTest(){
  stopSpeech();testSession=learning.start(unit,language,{retry:status.correct>0&&!status.passed});
  if(!testSession){flowNotice=t('テストを準備できませんでした。教材を確認して、もう一度お試しください。','เตรียมแบบทดสอบไม่สำเร็จ กรุณาตรวจสอบบทเรียนแล้วลองอีกครั้ง');refresh();return;}
  flowMode='test';flowNotice='';lastTestResult=null;$('quizTask').hidden=false;$('quizResult').hidden=true;
- renderLearningHub();nextQuestion();$('quizPanel').scrollIntoView({behavior:'smooth',block:'start'});
+ renderLearningHub();nextQuestion();$('quizPanel').scrollIntoView({behavior:'instant',block:'start'});
 }
 function returnToStudy(ids=null){
- stopSpeech();flowMode='learn';testSession=null;flowNotice='';clearBrowseFilters();reviewIds=Array.isArray(ids)&&ids.length?ids.slice():null;at=0;refresh();$('card').scrollIntoView({behavior:'smooth',block:'start'});
+ stopSpeech();flowMode='learn';testSession=null;flowNotice='';clearBrowseFilters();reviewIds=Array.isArray(ids)&&ids.length?ids.slice():null;at=0;refresh();$('card').scrollIntoView({behavior:'instant',block:'start'});
 }
 function showLearningResult(){
  const result=learning.finish(testSession);if(!result?.complete)return;
@@ -207,11 +215,11 @@ function showLearningResult(){
  $('resultTitle').textContent=allRight&&result.passed?t(`セット ${result.unit.number} 合格！`,`ผ่านชุดที่ ${result.unit.number}!`):result.passed?t('復習、お疲れさまでした','ทบทวนเสร็จแล้ว'):t(`あと${result.remaining}項目で合格`,`อีก ${result.remaining} รายการก็ผ่าน`);
  $('resultSummary').textContent=result.passed?(allRight?t(`${result.unit.total}項目すべて正解。単語リストにチェックが付きました。`, `ตอบถูกครบ ${result.unit.total} รายการแล้ว รายการคำมีเครื่องหมายผ่านแล้ว`):t(`今回は${result.score}/${result.total}正解。獲得済みのスタンプはそのまま残ります。`,`ครั้งนี้ถูก ${result.score}/${result.total} ข้อ ตราประทับที่เคยได้รับยังคงอยู่`)):t(`${result.score}/${result.total}正解。間違えた${result.wrongIds.length}項目を見直して、もう一度テストしましょう。`, `ตอบถูก ${result.score}/${result.total} ข้อ ทบทวน ${result.wrongIds.length} รายการที่ผิด แล้วทดสอบอีกครั้ง`);
  const nextUnit=learning.units(current).find(unit=>unit.number>result.unit.number&&!learning.status(unit,language).passed)||learning.units(current).find(unit=>!learning.status(unit,language).passed);
- if(result.passed&&allRight){$('resultPrimary').textContent=nextUnit?t('次のセットへ →','ชุดต่อไป →'):t('このテーマを復習する','ทบทวนหัวข้อนี้');$('resultPrimary').onclick=()=>{if(nextUnit){selectLearningUnit(nextUnit.id);$('learningHub').scrollIntoView({behavior:'smooth',block:'start'});}else returnToStudy();};}
+ if(result.passed&&allRight){$('resultPrimary').textContent=nextUnit?t('次のセットへ →','ชุดต่อไป →'):t('このテーマを復習する','ทบทวนหัวข้อนี้');$('resultPrimary').onclick=()=>{if(nextUnit){selectLearningUnit(nextUnit.id);$('learningHub').scrollIntoView({behavior:'instant',block:'start'});}else returnToStudy();};}
  else{$('resultPrimary').textContent=t('間違えた単語を覚える','ทบทวนคำที่ผิด');$('resultPrimary').onclick=()=>returnToStudy(result.wrongIds);}
  $('resultSecondary').textContent=result.passed&&allRight?t('このセットを見直す','ทบทวนชุดนี้'):t('もう一度テスト','ทดสอบอีกครั้ง');
  $('resultSecondary').onclick=()=>{if(result.passed&&allRight)returnToStudy();else startLearningTest();};
- $('resultTitle').focus({preventScroll:true});$('quizPanel').scrollIntoView({behavior:'smooth',block:'start'});
+ $('resultTitle').focus({preventScroll:true});$('quizPanel').scrollIntoView({behavior:'instant',block:'start'});
 }
 function updateLanguage(){
  const isJa=language==='ja';document.documentElement.lang=language;updateThaiHintVisibility();
@@ -244,11 +252,13 @@ function updateLanguage(){
  $('quizToggle').textContent=t('覚えるに戻る','กลับไปทบทวน');
  $('voiceHelpTitle').textContent=t('音声について','เกี่ยวกับเสียงอ่าน');
  $('voiceHelp').textContent=t('端末の合成音声を使用します。対応する言語の音声が必要です。読み方やアクセントが不自然になる場合があります。','ใช้เสียงสังเคราะห์ของอุปกรณ์ ต้องมีเสียงของภาษาที่เลือก บางคำอาจอ่านหรือออกเสียงสูงต่ำไม่เป็นธรรมชาติ');
- $('siteFooter').textContent='THAI × JAPANESE NAVI · V33';
+ $('siteFooter').textContent='THAI × JAPANESE NAVI · V34';
  window.ThaiNaviProfile.updateLanguage(language);storageFeedback(true);
 }
-function refreshLanguage(){updateLanguage();renderSections();refresh();}
-function refreshExternalLearning(){
+function refreshLanguage(){return learning.batch(refreshLanguageBody);}
+function refreshLanguageBody(){updateLanguage();renderSections();refresh();}
+function refreshExternalLearning(){return learning.batch(refreshExternalLearningBody);}
+function refreshExternalLearningBody(){
  favorites=savedIds('tn_favorites',favorites);learned=savedIds('tn_learned',learned);
  // Update progress without replacing the active question, answer buttons or
  // result. A foreground/background transition must not reset an in-flight test.
@@ -286,7 +296,7 @@ $('next').onclick=()=>{
 $('favBtn').onclick=()=>{const r=shown[at];if(!r)return;favorites=toggleSavedId('tn_favorites',favorites,r.id);refresh();};
 $('learned').onclick=()=>{const r=shown[at];if(!r)return;learned=toggleSavedId('tn_learned',learned,r.id);refresh();};
 $('quizToggle').onclick=()=>returnToStudy();
-$('quizNext').onclick=()=>{if(flowMode!=='test'||!testSession?.answered)return;stopSpeech();if(testSession.complete){showLearningResult();return;}if(learning.next(testSession)){nextQuestion();$('quizQuestion').scrollIntoView({behavior:'smooth',block:'start'});}};
+$('quizNext').onclick=()=>{if(flowMode!=='test'||!testSession?.answered)return;stopSpeech();if(testSession.complete){showLearningResult();return;}if(learning.next(testSession)){nextQuestion();$('quizQuestion').scrollIntoView({behavior:'instant',block:'start'});}};
 updateLanguage();renderSections();refresh();
 async function loadLessons(path){
  const controller=new AbortController(),timeout=setTimeout(()=>controller.abort(),15000);
@@ -302,5 +312,5 @@ async function loadCourse(path,isService){
   if(flowMode==='learn')refreshLanguage();else{renderSections();renderLearningHub();renderProgress();}
  }
 }
-loadCourse('lessons.json?v=33',false);loadCourse('service-lessons.json?v=33',true);
+loadCourse('lessons.json?v=34',false);loadCourse('service-lessons.json?v=34',true);
 })();

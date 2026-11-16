@@ -144,3 +144,17 @@ summary {
     padding-top: 12px;
   }
 }
+
+/* Immediate press feedback without moving the hit area or starting a second click. */
+button:not(:disabled):active,
+summary:active,
+a.heroJump:active {
+  box-shadow: inset 0 0 0 3px rgba(39, 102, 94, .3);
+}
+a[href], input[type="radio"], input[type="checkbox"], label {
+  touch-action: manipulation;
+}
+button:disabled { cursor: default; }
+@media (any-pointer: coarse) {
+  button:disabled { opacity: .58; }
+}

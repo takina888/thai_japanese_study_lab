@@ -56,7 +56,16 @@
         }
       }
     }
-    function mergeLatest() { mergeRecords(normalize(readLatest())); }
+    let batchDepth = 0;
+    function mergeLatest() { if (!batchDepth) mergeRecords(normalize(readLatest())); }
+    // One synchronous render uses one storage snapshot. Writes still merge the
+    // latest record in persist(), including changes made by another tab.
+    function batch(callback) {
+      if (typeof callback !== 'function') throw new TypeError('Expected callback');
+      if (!batchDepth) mergeLatest();
+      batchDepth++;
+      try { return callback(); } finally { batchDepth--; }
+    }
     const hasProgress = snapshot => directions.some(direction => snapshot[direction].seen.size > 0);
     function persist(incoming = null) {
       const raw = readLatest(), latest = normalize(raw);
@@ -236,7 +245,7 @@
       return question(handle);
     }
     if (Array.isArray(options.rows)) setRows(options.rows);
-    return { setRows, units, status, progress, markSeen, start, question, answer, next, finish };
+    return { setRows, units, status, progress, markSeen, start, question, answer, next, finish, batch };
   }
   root.ThaiNaviLearningSets = { create, storageKey, unitSize };
 })(typeof window !== 'undefined' ? window : globalThis);
