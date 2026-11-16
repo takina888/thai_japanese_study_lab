@@ -1,0 +1,30 @@
+Noto Looped Thai Regular — static letterform reference
+
+Font file: NotoLoopedThai-Regular.ttf
+Original local asset: /usr/share/fonts/truetype/noto/NotoLoopedThai-Regular.ttf
+Copied without modification. This is an existing runtime-provided font, not
+a newly downloaded release. The exact upstream commit is not established.
+
+Embedded font version: Version 1.00; ttfautohint (v1.8.3) -l 8 -r 50 -G 200 -x 14 -D thai -f none -a qsq -X ""
+Embedded unique ID: 1.00;GOOG;NotoLoopedThai-Regular
+Embedded copyright: Copyright 2020 Google LLC. All rights reserved
+Embedded manufacturer: The Fontpad Ltd
+Embedded designers: Sasikarn Vongin, Ben Mitchell
+Embedded project URL: http://www.google.com/get/noto
+Current Noto Thai upstream: https://github.com/notofonts/thai
+Current upstream license: https://github.com/notofonts/thai/blob/main/OFL.txt
+License: SIL Open Font License 1.1, explicitly declared in the font's
+name-table license entry. OFL.txt contains the complete license text and
+preserves this font's own embedded copyright notice.
+
+File size: 65536 bytes
+SHA-256: a13ebdee881ce1dcc84067c266345c86d2ace50cb599d2df02a1aa835552c1aa
+Outline format: TrueType glyf; 1000 units per em; 212 glyphs.
+Coverage checked: all 44 Thai consonants, including obsolete ฃ and ฅ;
+all 87 assigned codepoints in the Thai Unicode block, U+0E01–U+0E3A and
+U+0E3F–U+0E5B. Coverage is cmap coverage, not a language-teaching review.
+
+Use only as static glyph outlines for display or shape-tracing practice.
+Font contours are NOT pen centerlines, stroke order, pen-lift instructions,
+or an official handwriting model. Do not animate contour order as writing
+order or score a learner's stroke direction against these font contours.

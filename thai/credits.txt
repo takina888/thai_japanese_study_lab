@@ -1,0 +1,25 @@
+タイ文字練習 — 字形・教材の出典
+
+字形
+Noto Looped Thai Regular, Version 1.00
+Copyright 2020 Google LLC. All rights reserved.
+Design: Sasikarn Vongin, Ben Mitchell
+https://github.com/notofonts/thai
+SIL Open Font License 1.1 — 全文は同じフォルダーの OFL.txt
+
+フォントの字形を静的な見本として使用しています。
+書き順・筆運びを示すものではありません。
+
+文字・母音の構成と名称
+DLTV：子音44字
+https://dltv.ac.th/teachplan/episode/81181
+DLTV：基本母音の短長9組
+https://dltv.ac.th/utils/files/download/65641
+DLTV：書字と母音の配置
+https://dltv.ac.th/utils/files/download/155681
+Unicode：タイ文字の名称
+https://www.unicode.org/Public/UCD/latest/charts/nameslist/0e00/
+語研：入門タイ語の教科書（公式試読）
+https://www.goken-net.co.jp/goken_sample/387.pdf
+
+音声は教材録音の転載ではなく、端末の合成音声を使用しています。

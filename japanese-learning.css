@@ -1,0 +1,21 @@
+/* Reading support for Thai learners; matches the existing green / cream design. */
+.jpCoreReadings{display:grid;gap:2px;margin:5px 0 12px;min-width:0;text-align:left}
+.jpKanaReading{display:block;color:#35564b;font-size:clamp(20px,2.5vw,25px);font-weight:500;line-height:1.6;letter-spacing:.02em;overflow-wrap:anywhere}
+.jpRomanReading{display:block;color:#597464;font-size:clamp(17px,2vw,19px);font-weight:400;line-height:1.6;letter-spacing:.01em;overflow-wrap:anywhere}
+.jpCoreReadingsCompact{gap:1px;margin:4px 0 0}.jpCoreReadingsCompact .jpKanaReading{font-size:17px;line-height:1.55}.jpCoreReadingsCompact .jpRomanReading{font-size:15px;line-height:1.55}
+.jpReadingHeader{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin:13px 0 7px}
+.jpReadingLabel{font-size:13px;font-weight:600;color:#577964}
+.jpHintToggle{border:0;border-bottom:1px solid #91a897;background:transparent;color:#376d58;padding:5px 0;min-height:36px;font-size:13px}
+.japaneseThaiHint{font-family:"Noto Sans Thai",Tahoma,sans-serif;color:#305c48;font-size:clamp(19px,2.6vw,23px);line-height:1.85;overflow-wrap:anywhere}
+.jpThaiCardHint{background:#edf4eb;border-left:3px solid #91b09a;padding:12px 15px;border-radius:0 4px 4px}
+.thaiCueToken{display:inline-block;white-space:nowrap}.thaiCueLength{display:inline-block;vertical-align:middle;font-size:12px;border:1px solid #b9cdbb;background:#f7faf4;border-radius:3px;padding:0 4px;margin-left:3px;line-height:1.6;color:#547253}
+.thaiCueHold{display:inline-block;font-family:"Noto Sans JP","Yu Gothic",sans-serif;font-size:.78em;font-weight:500;line-height:1.45;background:#edf0e9;color:#65766b;border-radius:2px;padding:0 4px;vertical-align:middle}
+.jpTemplateNote{margin:10px 0 0;color:#7c6427;font-size:13px;line-height:1.8}
+.lessonContext{display:block;margin:8px 0;color:#65735e;font-size:15px;font-weight:400;line-height:1.75;overflow-wrap:anywhere}.quizOptions .lessonContext{font-size:14px;margin-top:6px}
+.jpMeaning{margin-top:20px;border-top:1px solid #dce3d8;padding-top:20px}.jpMeaning .phrase{font-size:clamp(25px,3.5vw,33px);margin-top:4px}
+.jpMeaning .speak{font-size:13px;padding:9px 12px}.jpAudioActions{margin-top:17px;gap:9px;flex-wrap:wrap}
+.jpLearningGuide{margin-bottom:18px}.jpLearningGuide ul{padding-left:22px;margin:9px 0}.jpLearningGuide li{line-height:1.85;margin:8px 0}.jpLearningGuide a{color:#39725d;text-underline-offset:3px}.jpLearningGuide .guideNote{font-size:12px;color:#778773}
+.jpReadingSetting .choice{align-items:flex-start}.jpReadingSetting input{margin-top:4px}.jpReadingSetting .choice small{font-size:12px}
+.hideJapaneseThaiHints .japaneseThaiHint{display:none!important}
+.quizJapanese{display:block}.quizThaiHint{display:block;color:#607960;font-size:15px;line-height:1.7;margin-top:8px;font-weight:400;letter-spacing:0}
+@media(max-width:700px){.jpCoreReadings{margin-top:4px;margin-bottom:10px}.jpKanaReading{font-size:22px}.jpRomanReading{font-size:17px}.jpCoreReadingsCompact .jpKanaReading{font-size:17px}.jpCoreReadingsCompact .jpRomanReading{font-size:15px}.jpThaiCardHint{padding:10px 12px}.jpReadingHeader{margin-top:11px}.jpMeaning{margin-top:18px;padding-top:17px}.jpAudioActions button{min-height:44px}.jpReadingSetting .choice{padding:12px}}

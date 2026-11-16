@@ -1,0 +1,54 @@
+[hidden]{display:none!important}
+.learningHub{border:1px solid #cbd8cc;background:#eef3eb;padding:20px;margin:0 0 20px;border-radius:5px}
+.unitChooser,.unitAction,.quizHeading{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.unitChooser label{font-weight:750;color:#315e50}
+.unitChooser select{max-width:100%;min-height:46px;font:inherit;color:#294b40;background:#fffefa;border:1px solid #8eab97;border-radius:3px;padding:8px 36px 8px 12px}
+.unitSteps{list-style:none;padding:0;margin:17px 0;display:flex;gap:8px;font-size:14px}
+.unitSteps li{flex:1;text-align:center;color:#6f7c72;border-bottom:3px solid #d6ded2;padding:5px 1px}
+.unitSteps li.active{color:#245f49;border-color:#39775c;font-weight:800}
+.unitSteps li.done{color:#39775c;border-color:#9fbea7}
+.courseProgress{display:grid;grid-template-columns:1fr auto;gap:5px 10px;font-size:14px;color:#456853}
+.courseProgress .bar{grid-column:1/-1;max-width:none;width:100%;height:9px;background:#dbe5d9;margin:4px 0 14px}
+.courseProgress .bar>div{transition:width .25s ease;background:#478566}
+.unitAction>span{font-size:15px;color:#476451}
+.unitPrimary{min-height:46px;border:1px solid #346951;background:#346951;color:#fffdf6;border-radius:4px;font:inherit;font-weight:750;padding:10px 18px}
+.unitPrimary:disabled{background:#e1e9df;border-color:#c6d3c3;color:#778774;cursor:default}
+.unitNotice{margin:12px 0 0;font-size:14px;color:#805c2d}
+.unitListDetails{margin-top:15px;border-top:1px solid #d0ddcd;padding-top:12px}
+.unitListDetails summary,.browseTools summary,.selfCheck summary{cursor:pointer;color:#466b55;font-size:14px}
+.unitList{list-style:none;padding:0;margin:10px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:7px}
+.unitList li{min-width:0}
+.unitList button{border:1px solid #d4dfd1;background:#fffefa;border-radius:3px;color:#294a3b;width:100%;text-align:left;padding:10px 12px;min-height:72px;display:grid;grid-template-columns:22px 1fr;gap:5px;font:inherit}
+.unitList button.current{border-color:#39775c;background:#f5f8f0}
+.unitList button .unitItemWords{display:flex;flex-direction:column;min-width:0;overflow-wrap:anywhere}
+.unitList small{font-size:12px;color:#6a7d6d}
+.unitCheck{color:#2d7851;font-weight:800}
+.unitPassedLabel{color:#2d7851;background:#e4f0de;padding:3px 7px;border-radius:3px;font-size:12px;margin-left:6px}
+.browseTools{margin:0 0 18px}
+.browseTools .tools{margin-bottom:12px}
+.selfCheck{margin:15px 0 25px}
+.selfCheck small{display:block;color:#6f7d72;font-size:12px;margin-top:7px}
+.selfCheck .toolBtn{margin-top:10px;font-size:13px}
+.quizPanel{padding:24px;border-color:#c7d8c8;margin-top:20px}
+.quizHeading{padding-bottom:17px;border-bottom:1px solid #d5ded2;margin-bottom:14px}
+.quizHeading h3{margin:0;font-size:22px;color:#2f5a47}
+.quizHeading>span{color:#657d6a;margin-left:auto}
+.quizHeading .toolBtn{font-size:13px;padding:7px 10px}
+.quizOptions button{font:inherit;color:#253f32;display:flex;flex-direction:column;justify-content:center;overflow-wrap:anywhere;line-height:1.6;min-height:90px;border-radius:5px}
+.quizOptions button:disabled{opacity:1;cursor:default}
+.quizThai{font-size:25px;font-weight:650}
+.quizThaiRoman{font-size:15px;color:#3e735d}
+.quizThaiKana{font-size:14px;color:#66816d}
+.quizPromptContext{display:block;font-size:15px;color:#6e704c;margin-top:8px}
+.quizFeedback{margin:16px 0;padding:14px 16px;background:#edf4e8;border-left:4px solid #6b9c71;overflow-wrap:anywhere}
+.quizFeedback .feedbackPair{font-weight:650;margin:0 0 8px}
+.quizFeedback .read{margin:3px 0 10px}
+#quizNext{width:100%;margin-top:16px}
+.quizResult{text-align:center;padding:22px 6px}
+.resultStamp{width:100px;height:100px;border:3px double #4d8d66;border-radius:50%;margin:0 auto 18px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#2c7650;background:#edf5e5;font-size:33px;font-weight:800;line-height:1.1;transform:rotate(-8deg)}
+.resultStamp span{font-size:16px;margin-top:5px}
+.quizResult h3{font-size:25px;line-height:1.5;color:#2f5d44;margin:0 0 12px}
+.quizResult p{font-size:16px;color:#647963;margin:0 auto 22px;max-width:540px}
+.resultActions{display:flex;justify-content:center;gap:10px;flex-wrap:wrap}
+@media(max-width:600px){.learningHub{padding:15px 13px}.unitChooser{gap:7px}.unitChooser label{font-size:16px}.unitChooser select{width:100%;font-size:16px}.unitSteps{font-size:12px;gap:5px;margin:12px 0}.courseProgress{font-size:12px}.unitAction{gap:8px}.unitAction>span{font-size:14px}.unitAction .unitPrimary{width:100%;font-size:15px}.unitList{grid-template-columns:1fr}.quizPanel{padding:17px 13px}.quizHeading h3{font-size:20px}.quizHeading{gap:7px}.quizHeading .toolBtn{width:100%}.quizOptions button{min-height:86px}.cardFooter{flex-wrap:wrap;gap:10px}.cardFooter>.fav{font-size:13px;padding:8px 10px}.cardFooter>.nav{flex:1;justify-content:flex-end}.nav button{padding:10px 12px;font-size:15px}.resultActions{flex-direction:column}.resultActions button{width:100%}.unitPassedLabel{display:inline-block;margin:5px 0 0}.cardTop{align-items:flex-start}.count{white-space:nowrap}}
+@media(max-width:600px){.cardFooter>.fav{width:100%}.cardFooter>.nav{width:100%;display:grid;grid-template-columns:1fr 1fr}.cardFooter .nav button{min-height:46px;white-space:nowrap}}

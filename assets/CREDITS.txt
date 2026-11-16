@@ -1,0 +1,13 @@
+japan-fuji.jpg
+Title: Lake Kawaguchiko and Mount Fuji at sunset during the Momijigari period
+Photographer: Moyan Brenn
+Source: https://commons.wikimedia.org/wiki/File:Lake_Kawaguchiko_and_Mount_Fuji_at_sunset_during_the_Momijigari_period.jpg
+Photographer's original: https://www.flickr.com/photos/28145073@N08/15763452380
+License: Creative Commons Attribution 2.0 Generic (CC BY 2.0)
+License URL: https://creativecommons.org/licenses/by/2.0/
+Derivative use: Wikimedia 1280px thumbnail, cropped for responsive display using CSS. A dark overlay and page text are displayed over the photo. The downloaded photo itself is unchanged.
+Source and license verified: 2026-11-10
+
+bangkok-river.png
+AI-generated illustration in a photographic style; not a documentary photograph.
+The page labels this existing hero asset as an illustrative image.

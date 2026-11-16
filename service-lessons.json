@@ -1,0 +1,2708 @@
+{
+  "version": 1,
+  "course": "service",
+  "count": 100,
+  "updated": "2026-11-11",
+  "items": [
+    {
+      "id": "service-001",
+      "type": "service",
+      "category": "レストラン",
+      "categoryTh": "ร้านอาหาร",
+      "ja": "いらっしゃいませ。",
+      "jaHira": "いらっしゃいませ。",
+      "jaRoman": "irasshaimase",
+      "th": "ยินดีต้อนรับ",
+      "thRoman": "yin dii tɔ̂ɔn ráp",
+      "thKana": "イン ディー トーン ラップ",
+      "ending": "statement",
+      "note": "",
+      "scene": "restaurant",
+      "variants": {
+        "male": {
+          "th": "ยินดีต้อนรับครับ",
+          "thRoman": "yin dii tɔ̂ɔn ráp khráp",
+          "thKana": "イン ディー トーン ラップ クラップ"
+        },
+        "female": {
+          "th": "ยินดีต้อนรับค่ะ",
+          "thRoman": "yin dii tɔ̂ɔn ráp khâ",
+          "thKana": "イン ディー トーン ラップ カ"
+        }
+      }
+    },
+    {
+      "id": "service-002",
+      "type": "service",
+      "category": "レストラン",
+      "categoryTh": "ร้านอาหาร",
+      "ja": "何名様ですか。",
+      "jaHira": "なんめいさまですか。",
+      "jaRoman": "nanmei sama desu ka",
+      "th": "มากี่ท่าน",
+      "thRoman": "maa gìi thâan",
+      "thKana": "マー ギー ターン",
+      "ending": "question",
+      "note": "",
+      "scene": "restaurant",
+      "variants": {
+        "male": {
+          "th": "มากี่ท่านครับ",
+          "thRoman": "maa gìi thâan khráp",
+          "thKana": "マー ギー ターン クラップ"
+        },
+        "female": {
+          "th": "มากี่ท่านคะ",
+          "thRoman": "maa gìi thâan khá",
+          "thKana": "マー ギー ターン カ"
+        }
+      }
+    },
+    {
+      "id": "service-003",
+      "type": "service",
+      "category": "レストラン",
+      "categoryTh": "ร้านอาหาร",
+      "ja": "ご予約はありますか。",
+      "jaHira": "ごよやくはありますか。",
+      "jaRoman": "goyoyaku wa arimasu ka",
+      "th": "จองไว้ไหม",
+      "thRoman": "cɔɔŋ wái mǎi",
+      "thKana": "ジョーン ワイ マイ",
+      "ending": "question",
+      "note": "",
+      "scene": "restaurant",
+      "variants": {
+        "male": {
+          "th": "จองไว้ไหมครับ",
+          "thRoman": "cɔɔŋ wái mǎi khráp",
+          "thKana": "ジョーン ワイ マイ クラップ"
+        },
+        "female": {
+          "th": "จองไว้ไหมคะ",
+          "thRoman": "cɔɔŋ wái mǎi khá",
+          "thKana": "ジョーン ワイ マイ カ"
+        }
+      }
+    },
+    {
+      "id": "service-004",
+      "type": "service",
+      "category": "レストラン",
+      "categoryTh": "ร้านอาหาร",
+      "ja": "ご予約のお名前をお願いします。",
+      "jaHira": "ごよやくのおなまえをおねがいします。",
+      "jaRoman": "goyoyaku no onamae o onegai shimasu",
+      "th": "ขอชื่อที่จองไว้",
+      "thRoman": "khɔ̌ɔ chɯ̂ɯ thîi cɔɔŋ wái",
+      "thKana": "コー チュー ティー ジョーン ワイ",
+      "ending": "statement",
+      "note": "",
+      "scene": "restaurant",
+      "variants": {
+        "male": {
+          "th": "ขอชื่อที่จองไว้ครับ",
+          "thRoman": "khɔ̌ɔ chɯ̂ɯ thîi cɔɔŋ wái khráp",
+          "thKana": "コー チュー ティー ジョーン ワイ クラップ"
+        },
+        "female": {
+          "th": "ขอชื่อที่จองไว้ค่ะ",
+          "thRoman": "khɔ̌ɔ chɯ̂ɯ thîi cɔɔŋ wái khâ",
+          "thKana": "コー チュー ティー ジョーン ワイ カ"
+        }
+      }
+    },
+    {
+      "id": "service-005",
+      "type": "service",
+      "category": "レストラン",
+      "categoryTh": "ร้านอาหาร",
+      "ja": "こちらへどうぞ。",
+      "jaHira": "こちらへどうぞ。",
+      "jaRoman": "kochira e douzo",
+      "th": "เชิญทางนี้",
+      "thRoman": "chəən thaaŋ níi",
+      "thKana": "チューン ターン ニー",
+      "ending": "statement",
+      "note": "",
+      "scene": "restaurant",
+      "variants": {
+        "male": {
+          "th": "เชิญทางนี้ครับ",
+          "thRoman": "chəən thaaŋ níi khráp",
+          "thKana": "チューン ターン ニー クラップ"
+        },
+        "female": {
+          "th": "เชิญทางนี้ค่ะ",
+          "thRoman": "chəən thaaŋ níi khâ",
+          "thKana": "チューン ターン ニー カ"
+        }
+      }
+    },
+    {
+      "id": "service-006",
+      "type": "service",
+      "category": "レストラン",
+      "categoryTh": "ร้านอาหาร",
+      "ja": "こちらにおかけください。",
+      "jaHira": "こちらにおかけください。",
+      "jaRoman": "kochira ni okake kudasai",
+      "th": "เชิญนั่งตรงนี้",
+      "thRoman": "chəən nâŋ troŋ níi",
+      "thKana": "チューン ナン トロン ニー",
+      "ending": "statement",
+      "note": "",
+      "scene": "restaurant",
+      "variants": {
+        "male": {
+          "th": "เชิญนั่งตรงนี้ครับ",
+          "thRoman": "chəən nâŋ troŋ níi khráp",
+          "thKana": "チューン ナン トロン ニー クラップ"
+        },
+        "female": {
+          "th": "เชิญนั่งตรงนี้ค่ะ",
+          "thRoman": "chəən nâŋ troŋ níi khâ",
+          "thKana": "チューン ナン トロン ニー カ"
+        }
+      }
+    },
+    {
+      "id": "service-007",
+      "type": "service",
+      "category": "レストラン",
+      "categoryTh": "ร้านอาหาร",
+      "ja": "少々お待ちください。",
+      "jaHira": "しょうしょうおまちください。",
+      "jaRoman": "shoushou omachi kudasai",
+      "th": "รอสักครู่",
+      "thRoman": "rɔɔ sàk khrûu",
+      "thKana": "ロー サック クルー",
+      "ending": "soft",
+      "note": "",
+      "scene": "restaurant",
+      "variants": {
+        "male": {
+          "th": "รอสักครู่นะครับ",
+          "thRoman": "rɔɔ sàk khrûu ná khráp",
+          "thKana": "ロー サック クルー ナ クラップ"
+        },
+        "female": {
+          "th": "รอสักครู่นะคะ",
+          "thRoman": "rɔɔ sàk khrûu ná khá",
+          "thKana": "ロー サック クルー ナ カ"
+        }
+      }
+    },
+    {
+      "id": "service-008",
+      "type": "service",
+      "category": "レストラン",
+      "categoryTh": "ร้านอาหาร",
+      "ja": "10分ほどお待ちください。",
+      "jaHira": "じゅっぷんほどおまちください。",
+      "jaRoman": "juppun hodo omachi kudasai",
+      "th": "รอประมาณสิบนาที",
+      "thRoman": "rɔɔ prà maan sìp naa thii",
+      "thKana": "ロー プラ マーン シップ ナー ティー",
+      "ending": "soft",
+      "note": "",
+      "scene": "restaurant",
+      "variants": {
+        "male": {
+          "th": "รอประมาณสิบนาทีนะครับ",
+          "thRoman": "rɔɔ prà maan sìp naa thii ná khráp",
+          "thKana": "ロー プラ マーン シップ ナー ティー ナ クラップ"
+        },
+        "female": {
+          "th": "รอประมาณสิบนาทีนะคะ",
+          "thRoman": "rɔɔ prà maan sìp naa thii ná khá",
+          "thKana": "ロー プラ マーン シップ ナー ティー ナ カ"
+        }
+      }
+    },
+    {
+      "id": "service-009",
+      "type": "service",
+      "category": "レストラン",
+      "categoryTh": "ร้านอาหาร",
+      "ja": "店内は禁煙です。",
+      "jaHira": "てんないはきんえんです。",
+      "jaRoman": "tennai wa kin'en desu",
+      "th": "ในร้านห้ามสูบบุหรี่",
+      "thRoman": "nai ráan hâam sùup bù rìi",
+      "thKana": "ナイ ラーン ハーム スープ ブ リー",
+      "ending": "statement",
+      "note": "",
+      "scene": "restaurant",
+      "variants": {
+        "male": {
+          "th": "ในร้านห้ามสูบบุหรี่ครับ",
+          "thRoman": "nai ráan hâam sùup bù rìi khráp",
+          "thKana": "ナイ ラーン ハーム スープ ブ リー クラップ"
+        },
+        "female": {
+          "th": "ในร้านห้ามสูบบุหรี่ค่ะ",
+          "thRoman": "nai ráan hâam sùup bù rìi khâ",
+          "thKana": "ナイ ラーン ハーム スープ ブ リー カ"
+        }
+      }
+    },
+    {
+      "id": "service-010",
+      "type": "service",
+      "category": "レストラン",
+      "categoryTh": "ร้านอาหาร",
+      "ja": "こちらがメニューです。",
+      "jaHira": "こちらがめにゅーです。",
+      "jaRoman": "kochira ga menyuu desu",
+      "th": "นี่คือเมนู",
+      "thRoman": "nîi khɯɯ mee nuu",
+      "thKana": "ニー クー メー ヌー",
+      "ending": "statement",
+      "note": "",
+      "scene": "restaurant",
+      "variants": {
+        "male": {
+          "th": "นี่คือเมนูครับ",
+          "thRoman": "nîi khɯɯ mee nuu khráp",
+          "thKana": "ニー クー メー ヌー クラップ"
+        },
+        "female": {
+          "th": "นี่คือเมนูค่ะ",
+          "thRoman": "nîi khɯɯ mee nuu khâ",
+          "thKana": "ニー クー メー ヌー カ"
+        }
+      }
+    },
+    {
+      "id": "service-011",
+      "type": "service",
+      "category": "レストラン",
+      "categoryTh": "ร้านอาหาร",
+      "ja": "ご注文はお決まりですか。",
+      "jaHira": "ごちゅうもんはおきまりですか。",
+      "jaRoman": "gochuumon wa okimari desu ka",
+      "th": "พร้อมสั่งอาหารไหม",
+      "thRoman": "phrɔ́ɔm sàŋ aa hǎan mǎi",
+      "thKana": "プローム サン アー ハーン マイ",
+      "ending": "question",
+      "note": "",
+      "scene": "restaurant",
+      "variants": {
+        "male": {
+          "th": "พร้อมสั่งอาหารไหมครับ",
+          "thRoman": "phrɔ́ɔm sàŋ aa hǎan mǎi khráp",
+          "thKana": "プローム サン アー ハーン マイ クラップ"
+        },
+        "female": {
+          "th": "พร้อมสั่งอาหารไหมคะ",
+          "thRoman": "phrɔ́ɔm sàŋ aa hǎan mǎi khá",
+          "thKana": "プローム サン アー ハーン マイ カ"
+        }
+      }
+    },
+    {
+      "id": "service-012",
+      "type": "service",
+      "category": "レストラン",
+      "categoryTh": "ร้านอาหาร",
+      "ja": "何になさいますか。",
+      "jaHira": "なにになさいますか。",
+      "jaRoman": "nani ni nasaimasu ka",
+      "th": "รับอะไรดี",
+      "thRoman": "ráp à rai dii",
+      "thKana": "ラップ ア ライ ディー",
+      "ending": "question",
+      "note": "",
+      "scene": "restaurant",
+      "variants": {
+        "male": {
+          "th": "รับอะไรดีครับ",
+          "thRoman": "ráp à rai dii khráp",
+          "thKana": "ラップ ア ライ ディー クラップ"
+        },
+        "female": {
+          "th": "รับอะไรดีคะ",
+          "thRoman": "ráp à rai dii khá",
+          "thKana": "ラップ ア ライ ディー カ"
+        }
+      }
+    },
+    {
+      "id": "service-013",
+      "type": "service",
+      "category": "レストラン",
+      "categoryTh": "ร้านอาหาร",
+      "ja": "この料理がおすすめです。",
+      "jaHira": "このりょうりがおすすめです。",
+      "jaRoman": "kono ryouri ga osusume desu",
+      "th": "แนะนำจานนี้",
+      "thRoman": "nɛ́ nam caan níi",
+      "thKana": "ネ ナム ジャーン ニー",
+      "ending": "statement",
+      "note": "",
+      "scene": "restaurant",
+      "variants": {
+        "male": {
+          "th": "แนะนำจานนี้ครับ",
+          "thRoman": "nɛ́ nam caan níi khráp",
+          "thKana": "ネ ナム ジャーン ニー クラップ"
+        },
+        "female": {
+          "th": "แนะนำจานนี้ค่ะ",
+          "thRoman": "nɛ́ nam caan níi khâ",
+          "thKana": "ネ ナム ジャーン ニー カ"
+        }
+      }
+    },
+    {
+      "id": "service-014",
+      "type": "service",
+      "category": "レストラン",
+      "categoryTh": "ร้านอาหาร",
+      "ja": "今日のおすすめです。",
+      "jaHira": "きょうのおすすめです。",
+      "jaRoman": "kyou no osusume desu",
+      "th": "นี่คือเมนูแนะนำวันนี้",
+      "thRoman": "nîi khɯɯ mee nuu nɛ́ nam wan níi",
+      "thKana": "ニー クー メー ヌー ネ ナム ワン ニー",
+      "ending": "statement",
+      "note": "",
+      "scene": "restaurant",
+      "variants": {
+        "male": {
+          "th": "นี่คือเมนูแนะนำวันนี้ครับ",
+          "thRoman": "nîi khɯɯ mee nuu nɛ́ nam wan níi khráp",
+          "thKana": "ニー クー メー ヌー ネ ナム ワン ニー クラップ"
+        },
+        "female": {
+          "th": "นี่คือเมนูแนะนำวันนี้ค่ะ",
+          "thRoman": "nîi khɯɯ mee nuu nɛ́ nam wan níi khâ",
+          "thKana": "ニー クー メー ヌー ネ ナム ワン ニー カ"
+        }
+      }
+    },
+    {
+      "id": "service-015",
+      "type": "service",
+      "category": "レストラン",
+      "categoryTh": "ร้านอาหาร",
+      "ja": "店内ですか、お持ち帰りですか。",
+      "jaHira": "てんないですか、おもちかえりですか。",
+      "jaRoman": "tennai desu ka, omochikaeri desu ka",
+      "th": "ทานที่นี่หรือกลับบ้าน",
+      "thRoman": "thaan thîi nîi rɯ̌ɯ klàp bâan",
+      "thKana": "ターン ティー ニー ルー グラップ バーン",
+      "ending": "question",
+      "note": "",
+      "scene": "restaurant",
+      "variants": {
+        "male": {
+          "th": "ทานที่นี่หรือกลับบ้านครับ",
+          "thRoman": "thaan thîi nîi rɯ̌ɯ klàp bâan khráp",
+          "thKana": "ターン ティー ニー ルー グラップ バーン クラップ"
+        },
+        "female": {
+          "th": "ทานที่นี่หรือกลับบ้านคะ",
+          "thRoman": "thaan thîi nîi rɯ̌ɯ klàp bâan khá",
+          "thKana": "ターン ティー ニー ルー グラップ バーン カ"
+        }
+      }
+    },
+    {
+      "id": "service-016",
+      "type": "service",
+      "category": "レストラン",
+      "categoryTh": "ร้านอาหาร",
+      "ja": "並盛りですか、大盛りですか。",
+      "jaHira": "なみもりですか、おおもりですか。",
+      "jaRoman": "namimori desu ka, oomori desu ka",
+      "th": "ธรรมดาหรือพิเศษ",
+      "thRoman": "tham má daa rɯ̌ɯ phí sèet",
+      "thKana": "タム マ ダー ルー ピ セート",
+      "ending": "question",
+      "note": "",
+      "scene": "restaurant",
+      "variants": {
+        "male": {
+          "th": "ธรรมดาหรือพิเศษครับ",
+          "thRoman": "tham má daa rɯ̌ɯ phí sèet khráp",
+          "thKana": "タム マ ダー ルー ピ セート クラップ"
+        },
+        "female": {
+          "th": "ธรรมดาหรือพิเศษคะ",
+          "thRoman": "tham má daa rɯ̌ɯ phí sèet khá",
+          "thKana": "タム マ ダー ルー ピ セート カ"
+        }
+      }
+    },
+    {
+      "id": "service-017",
+      "type": "service",
+      "category": "レストラン",
+      "categoryTh": "ร้านอาหาร",
+      "ja": "辛くても大丈夫ですか。",
+      "jaHira": "からくてもだいじょうぶですか。",
+      "jaRoman": "karakute mo daijoubu desu ka",
+      "th": "ทานเผ็ดได้ไหม",
+      "thRoman": "thaan phèt dâi mǎi",
+      "thKana": "ターン ペット ダイ マイ",
+      "ending": "question",
+      "note": "",
+      "scene": "restaurant",
+      "variants": {
+        "male": {
+          "th": "ทานเผ็ดได้ไหมครับ",
+          "thRoman": "thaan phèt dâi mǎi khráp",
+          "thKana": "ターン ペット ダイ マイ クラップ"
+        },
+        "female": {
+          "th": "ทานเผ็ดได้ไหมคะ",
+          "thRoman": "thaan phèt dâi mǎi khá",
+          "thKana": "ターン ペット ダイ マイ カ"
+        }
+      }
+    },
+    {
+      "id": "service-018",
+      "type": "service",
+      "category": "レストラン",
+      "categoryTh": "ร้านอาหาร",
+      "ja": "辛さを控えめにしますか。",
+      "jaHira": "からさをひかえめにしますか。",
+      "jaRoman": "karasa o hikaeme ni shimasu ka",
+      "th": "เอาเผ็ดน้อยไหม",
+      "thRoman": "ao phèt nɔ́ɔi mǎi",
+      "thKana": "アオ ペット ノーイ マイ",
+      "ending": "question",
+      "note": "",
+      "scene": "restaurant",
+      "variants": {
+        "male": {
+          "th": "เอาเผ็ดน้อยไหมครับ",
+          "thRoman": "ao phèt nɔ́ɔi mǎi khráp",
+          "thKana": "アオ ペット ノーイ マイ クラップ"
+        },
+        "female": {
+          "th": "เอาเผ็ดน้อยไหมคะ",
+          "thRoman": "ao phèt nɔ́ɔi mǎi khá",
+          "thKana": "アオ ペット ノーイ マイ カ"
+        }
+      }
+    },
+    {
+      "id": "service-019",
+      "type": "service",
+      "category": "レストラン",
+      "categoryTh": "ร้านอาหาร",
+      "ja": "パクチーを抜きますか。",
+      "jaHira": "ぱくちーをぬきますか。",
+      "jaRoman": "pakuchii o nukimasu ka",
+      "th": "เอาผักชีออกไหม",
+      "thRoman": "ao phàk chii ɔ̀ɔk mǎi",
+      "thKana": "アオ パック チー オーク マイ",
+      "ending": "question",
+      "note": "",
+      "scene": "restaurant",
+      "variants": {
+        "male": {
+          "th": "เอาผักชีออกไหมครับ",
+          "thRoman": "ao phàk chii ɔ̀ɔk mǎi khráp",
+          "thKana": "アオ パック チー オーク マイ クラップ"
+        },
+        "female": {
+          "th": "เอาผักชีออกไหมคะ",
+          "thRoman": "ao phàk chii ɔ̀ɔk mǎi khá",
+          "thKana": "アオ パック チー オーク マイ カ"
+        }
+      }
+    },
+    {
+      "id": "service-020",
+      "type": "service",
+      "category": "レストラン",
+      "categoryTh": "ร้านอาหาร",
+      "ja": "食べ物のアレルギーはありますか。",
+      "jaHira": "たべもののあれるぎーはありますか。",
+      "jaRoman": "tabemono no arerugii wa arimasu ka",
+      "th": "แพ้อาหารอะไรไหม",
+      "thRoman": "phɛ́ɛ aa hǎan à rai mǎi",
+      "thKana": "ペー アー ハーン ア ライ マイ",
+      "ending": "question",
+      "note": "",
+      "scene": "restaurant",
+      "variants": {
+        "male": {
+          "th": "แพ้อาหารอะไรไหมครับ",
+          "thRoman": "phɛ́ɛ aa hǎan à rai mǎi khráp",
+          "thKana": "ペー アー ハーン ア ライ マイ クラップ"
+        },
+        "female": {
+          "th": "แพ้อาหารอะไรไหมคะ",
+          "thRoman": "phɛ́ɛ aa hǎan à rai mǎi khá",
+          "thKana": "ペー アー ハーン ア ライ マイ カ"
+        }
+      }
+    },
+    {
+      "id": "service-021",
+      "type": "service",
+      "category": "レストラン",
+      "categoryTh": "ร้านอาหาร",
+      "ja": "ピーナッツが入っています。",
+      "jaHira": "ぴーなっつがはいっています。",
+      "jaRoman": "piinattsu ga haitte imasu",
+      "th": "มีถั่วลิสง",
+      "thRoman": "mii thùa lí sǒŋ",
+      "thKana": "ミー トゥア リ ソン",
+      "ending": "statement",
+      "note": "",
+      "scene": "restaurant",
+      "variants": {
+        "male": {
+          "th": "มีถั่วลิสงครับ",
+          "thRoman": "mii thùa lí sǒŋ khráp",
+          "thKana": "ミー トゥア リ ソン クラップ"
+        },
+        "female": {
+          "th": "มีถั่วลิสงค่ะ",
+          "thRoman": "mii thùa lí sǒŋ khâ",
+          "thKana": "ミー トゥア リ ソン カ"
+        }
+      }
+    },
+    {
+      "id": "service-022",
+      "type": "service",
+      "category": "レストラン",
+      "categoryTh": "ร้านอาหาร",
+      "ja": "熱いのでご注意ください。",
+      "jaHira": "あついのでごちゅういください。",
+      "jaRoman": "atsui node gochuui kudasai",
+      "th": "ระวังร้อน",
+      "thRoman": "rá waŋ rɔ́ɔn",
+      "thKana": "ラ ワン ローン",
+      "ending": "soft",
+      "note": "",
+      "scene": "restaurant",
+      "variants": {
+        "male": {
+          "th": "ระวังร้อนนะครับ",
+          "thRoman": "rá waŋ rɔ́ɔn ná khráp",
+          "thKana": "ラ ワン ローン ナ クラップ"
+        },
+        "female": {
+          "th": "ระวังร้อนนะคะ",
+          "thRoman": "rá waŋ rɔ́ɔn ná khá",
+          "thKana": "ラ ワン ローン ナ カ"
+        }
+      }
+    },
+    {
+      "id": "service-023",
+      "type": "service",
+      "category": "レストラン",
+      "categoryTh": "ร้านอาหาร",
+      "ja": "お料理は全部そろいましたか。",
+      "jaHira": "おりょうりはぜんぶそろいましたか。",
+      "jaRoman": "oryouri wa zenbu soroimashita ka",
+      "th": "อาหารครบแล้วไหม",
+      "thRoman": "aa hǎan khróp lɛ́ɛo mǎi",
+      "thKana": "アー ハーン クロップ レーオ マイ",
+      "ending": "question",
+      "note": "",
+      "scene": "restaurant",
+      "variants": {
+        "male": {
+          "th": "อาหารครบแล้วไหมครับ",
+          "thRoman": "aa hǎan khróp lɛ́ɛo mǎi khráp",
+          "thKana": "アー ハーン クロップ レーオ マイ クラップ"
+        },
+        "female": {
+          "th": "อาหารครบแล้วไหมคะ",
+          "thRoman": "aa hǎan khróp lɛ́ɛo mǎi khá",
+          "thKana": "アー ハーン クロップ レーオ マイ カ"
+        }
+      }
+    },
+    {
+      "id": "service-024",
+      "type": "service",
+      "category": "レストラン",
+      "categoryTh": "ร้านอาหาร",
+      "ja": "お飲み物のおかわりはいかがですか。",
+      "jaHira": "おのみもののおかわりはいかがですか。",
+      "jaRoman": "onomimono no okawari wa ikaga desu ka",
+      "th": "รับเครื่องดื่มเพิ่มไหม",
+      "thRoman": "ráp khrɯ̂aŋ dɯ̀ɯm phə̂əm mǎi",
+      "thKana": "ラップ クルアン ドゥーム プーム マイ",
+      "ending": "question",
+      "note": "",
+      "scene": "restaurant",
+      "variants": {
+        "male": {
+          "th": "รับเครื่องดื่มเพิ่มไหมครับ",
+          "thRoman": "ráp khrɯ̂aŋ dɯ̀ɯm phə̂əm mǎi khráp",
+          "thKana": "ラップ クルアン ドゥーム プーム マイ クラップ"
+        },
+        "female": {
+          "th": "รับเครื่องดื่มเพิ่มไหมคะ",
+          "thRoman": "ráp khrɯ̂aŋ dɯ̀ɯm phə̂əm mǎi khá",
+          "thKana": "ラップ クルアン ドゥーム プーム マイ カ"
+        }
+      }
+    },
+    {
+      "id": "service-025",
+      "type": "service",
+      "category": "レストラン",
+      "categoryTh": "ร้านอาหาร",
+      "ja": "お水のおかわりはいかがですか。",
+      "jaHira": "おみずのおかわりはいかがですか。",
+      "jaRoman": "omizu no okawari wa ikaga desu ka",
+      "th": "รับน้ำเพิ่มไหม",
+      "thRoman": "ráp náam phə̂əm mǎi",
+      "thKana": "ラップ ナーム プーム マイ",
+      "ending": "question",
+      "note": "",
+      "scene": "restaurant",
+      "variants": {
+        "male": {
+          "th": "รับน้ำเพิ่มไหมครับ",
+          "thRoman": "ráp náam phə̂əm mǎi khráp",
+          "thKana": "ラップ ナーム プーム マイ クラップ"
+        },
+        "female": {
+          "th": "รับน้ำเพิ่มไหมคะ",
+          "thRoman": "ráp náam phə̂əm mǎi khá",
+          "thKana": "ラップ ナーム プーム マイ カ"
+        }
+      }
+    },
+    {
+      "id": "service-026",
+      "type": "service",
+      "category": "レストラン",
+      "categoryTh": "ร้านอาหาร",
+      "ja": "このお皿を下げてもいいですか。",
+      "jaHira": "このおさらをさげてもいいですか。",
+      "jaRoman": "kono osara o sagete mo ii desu ka",
+      "th": "ขอเก็บจานนี้ได้ไหม",
+      "thRoman": "khɔ̌ɔ kèp caan níi dâi mǎi",
+      "thKana": "コー ゲップ ジャーン ニー ダイ マイ",
+      "ending": "question",
+      "note": "",
+      "scene": "restaurant",
+      "variants": {
+        "male": {
+          "th": "ขอเก็บจานนี้ได้ไหมครับ",
+          "thRoman": "khɔ̌ɔ kèp caan níi dâi mǎi khráp",
+          "thKana": "コー ゲップ ジャーン ニー ダイ マイ クラップ"
+        },
+        "female": {
+          "th": "ขอเก็บจานนี้ได้ไหมคะ",
+          "thRoman": "khɔ̌ɔ kèp caan níi dâi mǎi khá",
+          "thKana": "コー ゲップ ジャーン ニー ダイ マイ カ"
+        }
+      }
+    },
+    {
+      "id": "service-027",
+      "type": "service",
+      "category": "レストラン",
+      "categoryTh": "ร้านอาหาร",
+      "ja": "お食事はお済みですか。",
+      "jaHira": "おしょくじはおすみですか。",
+      "jaRoman": "oshokuji wa osumi desu ka",
+      "th": "ทานเสร็จหรือยัง",
+      "thRoman": "thaan sèt rɯ̌ɯ yaŋ",
+      "thKana": "ターン セット ルー ヤン",
+      "ending": "question",
+      "note": "",
+      "scene": "restaurant",
+      "variants": {
+        "male": {
+          "th": "ทานเสร็จหรือยังครับ",
+          "thRoman": "thaan sèt rɯ̌ɯ yaŋ khráp",
+          "thKana": "ターン セット ルー ヤン クラップ"
+        },
+        "female": {
+          "th": "ทานเสร็จหรือยังคะ",
+          "thRoman": "thaan sèt rɯ̌ɯ yaŋ khá",
+          "thKana": "ターン セット ルー ヤン カ"
+        }
+      }
+    },
+    {
+      "id": "service-028",
+      "type": "service",
+      "category": "レストラン",
+      "categoryTh": "ร้านอาหาร",
+      "ja": "足りないものはありますか。",
+      "jaHira": "たりないものはありますか。",
+      "jaRoman": "tarinai mono wa arimasu ka",
+      "th": "ขาดอะไรไหม",
+      "thRoman": "khàat à rai mǎi",
+      "thKana": "カート ア ライ マイ",
+      "ending": "question",
+      "note": "",
+      "scene": "restaurant",
+      "variants": {
+        "male": {
+          "th": "ขาดอะไรไหมครับ",
+          "thRoman": "khàat à rai mǎi khráp",
+          "thKana": "カート ア ライ マイ クラップ"
+        },
+        "female": {
+          "th": "ขาดอะไรไหมคะ",
+          "thRoman": "khàat à rai mǎi khá",
+          "thKana": "カート ア ライ マイ カ"
+        }
+      }
+    },
+    {
+      "id": "service-029",
+      "type": "service",
+      "category": "レストラン",
+      "categoryTh": "ร้านอาหาร",
+      "ja": "こちらは売り切れです。",
+      "jaHira": "こちらはうりきれです。",
+      "jaRoman": "kochira wa urikire desu",
+      "th": "เมนูนี้หมดแล้ว",
+      "thRoman": "mee nuu níi mòt lɛ́ɛo",
+      "thKana": "メー ヌー ニー モット レーオ",
+      "ending": "statement",
+      "note": "",
+      "scene": "restaurant",
+      "variants": {
+        "male": {
+          "th": "เมนูนี้หมดแล้วครับ",
+          "thRoman": "mee nuu níi mòt lɛ́ɛo khráp",
+          "thKana": "メー ヌー ニー モット レーオ クラップ"
+        },
+        "female": {
+          "th": "เมนูนี้หมดแล้วค่ะ",
+          "thRoman": "mee nuu níi mòt lɛ́ɛo khâ",
+          "thKana": "メー ヌー ニー モット レーオ カ"
+        }
+      }
+    },
+    {
+      "id": "service-030",
+      "type": "service",
+      "category": "レストラン",
+      "categoryTh": "ร้านอาหาร",
+      "ja": "ほかの料理もあります。",
+      "jaHira": "ほかのりょうりもあります。",
+      "jaRoman": "hoka no ryouri mo arimasu",
+      "th": "มีเมนูอื่นด้วย",
+      "thRoman": "mii mee nuu ɯ̀ɯn dûai",
+      "thKana": "ミー メー ヌー ウーン ドゥアイ",
+      "ending": "statement",
+      "note": "",
+      "scene": "restaurant",
+      "variants": {
+        "male": {
+          "th": "มีเมนูอื่นด้วยครับ",
+          "thRoman": "mii mee nuu ɯ̀ɯn dûai khráp",
+          "thKana": "ミー メー ヌー ウーン ドゥアイ クラップ"
+        },
+        "female": {
+          "th": "มีเมนูอื่นด้วยค่ะ",
+          "thRoman": "mii mee nuu ɯ̀ɯn dûai khâ",
+          "thKana": "ミー メー ヌー ウーン ドゥアイ カ"
+        }
+      }
+    },
+    {
+      "id": "service-031",
+      "type": "service",
+      "category": "レストラン",
+      "categoryTh": "ร้านอาหาร",
+      "ja": "ご注文を確認します。",
+      "jaHira": "ごちゅうもんをかくにんします。",
+      "jaRoman": "gochuumon o kakunin shimasu",
+      "th": "ขอทวนรายการ",
+      "thRoman": "khɔ̌ɔ thuan raai kaan",
+      "thKana": "コー トゥアン ラーイ ガーン",
+      "ending": "statement",
+      "note": "",
+      "scene": "restaurant",
+      "variants": {
+        "male": {
+          "th": "ขอทวนรายการครับ",
+          "thRoman": "khɔ̌ɔ thuan raai kaan khráp",
+          "thKana": "コー トゥアン ラーイ ガーン クラップ"
+        },
+        "female": {
+          "th": "ขอทวนรายการค่ะ",
+          "thRoman": "khɔ̌ɔ thuan raai kaan khâ",
+          "thKana": "コー トゥアン ラーイ ガーン カ"
+        }
+      }
+    },
+    {
+      "id": "service-032",
+      "type": "service",
+      "category": "レストラン",
+      "categoryTh": "ร้านอาหาร",
+      "ja": "お会計はご一緒ですか。",
+      "jaHira": "おかいけいはごいっしょですか。",
+      "jaRoman": "okaikei wa goissho desu ka",
+      "th": "จ่ายรวมกันไหม",
+      "thRoman": "càai ruam kan mǎi",
+      "thKana": "ジャーイ ルアム ガン マイ",
+      "ending": "question",
+      "note": "",
+      "scene": "restaurant",
+      "variants": {
+        "male": {
+          "th": "จ่ายรวมกันไหมครับ",
+          "thRoman": "càai ruam kan mǎi khráp",
+          "thKana": "ジャーイ ルアム ガン マイ クラップ"
+        },
+        "female": {
+          "th": "จ่ายรวมกันไหมคะ",
+          "thRoman": "càai ruam kan mǎi khá",
+          "thKana": "ジャーイ ルアム ガン マイ カ"
+        }
+      }
+    },
+    {
+      "id": "service-033",
+      "type": "service",
+      "category": "レストラン",
+      "categoryTh": "ร้านอาหาร",
+      "ja": "お会計はレジでお願いします。",
+      "jaHira": "おかいけいはれじでおねがいします。",
+      "jaRoman": "okaikei wa reji de onegai shimasu",
+      "th": "ชำระเงินที่เคาน์เตอร์",
+      "thRoman": "cham rá ŋən thîi kháo tə̂ə",
+      "thKana": "チャム ラ グン ティー カオ トゥー",
+      "ending": "soft",
+      "note": "",
+      "scene": "restaurant",
+      "variants": {
+        "male": {
+          "th": "ชำระเงินที่เคาน์เตอร์นะครับ",
+          "thRoman": "cham rá ŋən thîi kháo tə̂ə ná khráp",
+          "thKana": "チャム ラ グン ティー カオ トゥー ナ クラップ"
+        },
+        "female": {
+          "th": "ชำระเงินที่เคาน์เตอร์นะคะ",
+          "thRoman": "cham rá ŋən thîi kháo tə̂ə ná khá",
+          "thKana": "チャム ラ グン ティー カオ トゥー ナ カ"
+        }
+      }
+    },
+    {
+      "id": "service-034",
+      "type": "service",
+      "category": "レストラン",
+      "categoryTh": "ร้านอาหาร",
+      "ja": "ご来店ありがとうございます。",
+      "jaHira": "ごらいてんありがとうございます。",
+      "jaRoman": "goraiten arigatou gozaimasu",
+      "th": "ขอบคุณที่มาใช้บริการ",
+      "thRoman": "khɔ̀ɔp khun thîi maa chái bɔɔ rí kaan",
+      "thKana": "コープ クン ティー マー チャイ ボー リ ガーン",
+      "ending": "statement",
+      "note": "",
+      "scene": "restaurant",
+      "variants": {
+        "male": {
+          "th": "ขอบคุณที่มาใช้บริการครับ",
+          "thRoman": "khɔ̀ɔp khun thîi maa chái bɔɔ rí kaan khráp",
+          "thKana": "コープ クン ティー マー チャイ ボー リ ガーン クラップ"
+        },
+        "female": {
+          "th": "ขอบคุณที่มาใช้บริการค่ะ",
+          "thRoman": "khɔ̀ɔp khun thîi maa chái bɔɔ rí kaan khâ",
+          "thKana": "コープ クン ティー マー チャイ ボー リ ガーン カ"
+        }
+      }
+    },
+    {
+      "id": "service-035",
+      "type": "service",
+      "category": "レストラン",
+      "categoryTh": "ร้านอาหาร",
+      "ja": "どうぞ召し上がってください。",
+      "jaHira": "どうぞめしあがってください。",
+      "jaRoman": "douzo meshiagatte kudasai",
+      "th": "เชิญทานได้เลย",
+      "thRoman": "chəən thaan dâi ləəi",
+      "thKana": "チューン ターン ダイ ルーイ",
+      "ending": "statement",
+      "note": "",
+      "scene": "restaurant",
+      "variants": {
+        "male": {
+          "th": "เชิญทานได้เลยครับ",
+          "thRoman": "chəən thaan dâi ləəi khráp",
+          "thKana": "チューン ターン ダイ ルーイ クラップ"
+        },
+        "female": {
+          "th": "เชิญทานได้เลยค่ะ",
+          "thRoman": "chəən thaan dâi ləəi khâ",
+          "thKana": "チューン ターン ダイ ルーイ カ"
+        }
+      }
+    },
+    {
+      "id": "service-036",
+      "type": "service",
+      "category": "コンビニ",
+      "categoryTh": "ร้านสะดวกซื้อ",
+      "ja": "何をお探しですか。",
+      "jaHira": "なにをおさがしですか。",
+      "jaRoman": "nani o osagashi desu ka",
+      "th": "หาอะไรอยู่",
+      "thRoman": "hǎa à rai yùu",
+      "thKana": "ハー ア ライ ユー",
+      "ending": "question",
+      "note": "",
+      "scene": "convenience",
+      "variants": {
+        "male": {
+          "th": "หาอะไรอยู่ครับ",
+          "thRoman": "hǎa à rai yùu khráp",
+          "thKana": "ハー ア ライ ユー クラップ"
+        },
+        "female": {
+          "th": "หาอะไรอยู่คะ",
+          "thRoman": "hǎa à rai yùu khá",
+          "thKana": "ハー ア ライ ユー カ"
+        }
+      }
+    },
+    {
+      "id": "service-037",
+      "type": "service",
+      "category": "コンビニ",
+      "categoryTh": "ร้านสะดวกซื้อ",
+      "ja": "商品はこちらです。",
+      "jaHira": "しょうひんはこちらです。",
+      "jaRoman": "shouhin wa kochira desu",
+      "th": "สินค้าอยู่ตรงนี้",
+      "thRoman": "sǐn kháa yùu troŋ níi",
+      "thKana": "シン カー ユー トロン ニー",
+      "ending": "statement",
+      "note": "",
+      "scene": "convenience",
+      "variants": {
+        "male": {
+          "th": "สินค้าอยู่ตรงนี้ครับ",
+          "thRoman": "sǐn kháa yùu troŋ níi khráp",
+          "thKana": "シン カー ユー トロン ニー クラップ"
+        },
+        "female": {
+          "th": "สินค้าอยู่ตรงนี้ค่ะ",
+          "thRoman": "sǐn kháa yùu troŋ níi khâ",
+          "thKana": "シン カー ユー トロン ニー カ"
+        }
+      }
+    },
+    {
+      "id": "service-038",
+      "type": "service",
+      "category": "コンビニ",
+      "categoryTh": "ร้านสะดวกซื้อ",
+      "ja": "この棚にあります。",
+      "jaHira": "このたなにあります。",
+      "jaRoman": "kono tana ni arimasu",
+      "th": "อยู่บนชั้นนี้",
+      "thRoman": "yùu bon chán níi",
+      "thKana": "ユー ボン チャン ニー",
+      "ending": "statement",
+      "note": "",
+      "scene": "convenience",
+      "variants": {
+        "male": {
+          "th": "อยู่บนชั้นนี้ครับ",
+          "thRoman": "yùu bon chán níi khráp",
+          "thKana": "ユー ボン チャン ニー クラップ"
+        },
+        "female": {
+          "th": "อยู่บนชั้นนี้ค่ะ",
+          "thRoman": "yùu bon chán níi khâ",
+          "thKana": "ユー ボン チャン ニー カ"
+        }
+      }
+    },
+    {
+      "id": "service-039",
+      "type": "service",
+      "category": "コンビニ",
+      "categoryTh": "ร้านสะดวกซื้อ",
+      "ja": "冷蔵庫の中にあります。",
+      "jaHira": "れいぞうこのなかにあります。",
+      "jaRoman": "reizouko no naka ni arimasu",
+      "th": "อยู่ในตู้เย็น",
+      "thRoman": "yùu nai tûu yen",
+      "thKana": "ユー ナイ トゥー イェン",
+      "ending": "statement",
+      "note": "",
+      "scene": "convenience",
+      "variants": {
+        "male": {
+          "th": "อยู่ในตู้เย็นครับ",
+          "thRoman": "yùu nai tûu yen khráp",
+          "thKana": "ユー ナイ トゥー イェン クラップ"
+        },
+        "female": {
+          "th": "อยู่ในตู้เย็นค่ะ",
+          "thRoman": "yùu nai tûu yen khâ",
+          "thKana": "ユー ナイ トゥー イェン カ"
+        }
+      }
+    },
+    {
+      "id": "service-040",
+      "type": "service",
+      "category": "コンビニ",
+      "categoryTh": "ร้านสะดวกซื้อ",
+      "ja": "在庫がありません。",
+      "jaHira": "ざいこがありません。",
+      "jaRoman": "zaiko ga arimasen",
+      "th": "สินค้าหมดแล้ว",
+      "thRoman": "sǐn kháa mòt lɛ́ɛo",
+      "thKana": "シン カー モット レーオ",
+      "ending": "statement",
+      "note": "",
+      "scene": "convenience",
+      "variants": {
+        "male": {
+          "th": "สินค้าหมดแล้วครับ",
+          "thRoman": "sǐn kháa mòt lɛ́ɛo khráp",
+          "thKana": "シン カー モット レーオ クラップ"
+        },
+        "female": {
+          "th": "สินค้าหมดแล้วค่ะ",
+          "thRoman": "sǐn kháa mòt lɛ́ɛo khâ",
+          "thKana": "シン カー モット レーオ カ"
+        }
+      }
+    },
+    {
+      "id": "service-041",
+      "type": "service",
+      "category": "コンビニ",
+      "categoryTh": "ร้านสะดวกซื้อ",
+      "ja": "在庫を確認します。",
+      "jaHira": "ざいこをかくにんします。",
+      "jaRoman": "zaiko o kakunin shimasu",
+      "th": "ขอดูสต็อกก่อน",
+      "thRoman": "khɔ̌ɔ duu sà tɔ́k kɔ̀ɔn",
+      "thKana": "コー ドゥー サ トック ゴーン",
+      "ending": "statement",
+      "note": "",
+      "scene": "convenience",
+      "variants": {
+        "male": {
+          "th": "ขอดูสต็อกก่อนครับ",
+          "thRoman": "khɔ̌ɔ duu sà tɔ́k kɔ̀ɔn khráp",
+          "thKana": "コー ドゥー サ トック ゴーン クラップ"
+        },
+        "female": {
+          "th": "ขอดูสต็อกก่อนค่ะ",
+          "thRoman": "khɔ̌ɔ duu sà tɔ́k kɔ̀ɔn khâ",
+          "thKana": "コー ドゥー サ トック ゴーン カ"
+        }
+      }
+    },
+    {
+      "id": "service-042",
+      "type": "service",
+      "category": "コンビニ",
+      "categoryTh": "ร้านสะดวกซื้อ",
+      "ja": "袋は要りますか。",
+      "jaHira": "ふくろはいりますか。",
+      "jaRoman": "fukuro wa irimasu ka",
+      "th": "รับถุงไหม",
+      "thRoman": "ráp thǔŋ mǎi",
+      "thKana": "ラップ トゥン マイ",
+      "ending": "question",
+      "note": "",
+      "scene": "convenience",
+      "variants": {
+        "male": {
+          "th": "รับถุงไหมครับ",
+          "thRoman": "ráp thǔŋ mǎi khráp",
+          "thKana": "ラップ トゥン マイ クラップ"
+        },
+        "female": {
+          "th": "รับถุงไหมคะ",
+          "thRoman": "ráp thǔŋ mǎi khá",
+          "thKana": "ラップ トゥン マイ カ"
+        }
+      }
+    },
+    {
+      "id": "service-043",
+      "type": "service",
+      "category": "コンビニ",
+      "categoryTh": "ร้านสะดวกซื้อ",
+      "ja": "袋は有料です。",
+      "jaHira": "ふくろはゆうりょうです。",
+      "jaRoman": "fukuro wa yuuryou desu",
+      "th": "ถุงมีค่าใช้จ่าย",
+      "thRoman": "thǔŋ mii khâa chái càai",
+      "thKana": "トゥン ミー カー チャイ ジャーイ",
+      "ending": "statement",
+      "note": "",
+      "scene": "convenience",
+      "variants": {
+        "male": {
+          "th": "ถุงมีค่าใช้จ่ายครับ",
+          "thRoman": "thǔŋ mii khâa chái càai khráp",
+          "thKana": "トゥン ミー カー チャイ ジャーイ クラップ"
+        },
+        "female": {
+          "th": "ถุงมีค่าใช้จ่ายค่ะ",
+          "thRoman": "thǔŋ mii khâa chái càai khâ",
+          "thKana": "トゥン ミー カー チャイ ジャーイ カ"
+        }
+      }
+    },
+    {
+      "id": "service-044",
+      "type": "service",
+      "category": "コンビニ",
+      "categoryTh": "ร้านสะดวกซื้อ",
+      "ja": "温めますか。",
+      "jaHira": "あたためますか。",
+      "jaRoman": "atatamemasu ka",
+      "th": "อุ่นให้ไหม",
+      "thRoman": "ùn hâi mǎi",
+      "thKana": "ウン ハイ マイ",
+      "ending": "question",
+      "note": "",
+      "scene": "convenience",
+      "variants": {
+        "male": {
+          "th": "อุ่นให้ไหมครับ",
+          "thRoman": "ùn hâi mǎi khráp",
+          "thKana": "ウン ハイ マイ クラップ"
+        },
+        "female": {
+          "th": "อุ่นให้ไหมคะ",
+          "thRoman": "ùn hâi mǎi khá",
+          "thKana": "ウン ハイ マイ カ"
+        }
+      }
+    },
+    {
+      "id": "service-045",
+      "type": "service",
+      "category": "コンビニ",
+      "categoryTh": "ร้านสะดวกซื้อ",
+      "ja": "お箸は要りますか。",
+      "jaHira": "おはしはいりますか。",
+      "jaRoman": "ohashi wa irimasu ka",
+      "th": "รับตะเกียบไหม",
+      "thRoman": "ráp tà kìap mǎi",
+      "thKana": "ラップ タ ギアップ マイ",
+      "ending": "question",
+      "note": "",
+      "scene": "convenience",
+      "variants": {
+        "male": {
+          "th": "รับตะเกียบไหมครับ",
+          "thRoman": "ráp tà kìap mǎi khráp",
+          "thKana": "ラップ タ ギアップ マイ クラップ"
+        },
+        "female": {
+          "th": "รับตะเกียบไหมคะ",
+          "thRoman": "ráp tà kìap mǎi khá",
+          "thKana": "ラップ タ ギアップ マイ カ"
+        }
+      }
+    },
+    {
+      "id": "service-046",
+      "type": "service",
+      "category": "コンビニ",
+      "categoryTh": "ร้านสะดวกซื้อ",
+      "ja": "スプーンは要りますか。",
+      "jaHira": "すぷーんはいりますか。",
+      "jaRoman": "supuun wa irimasu ka",
+      "th": "รับช้อนไหม",
+      "thRoman": "ráp chɔ́ɔn mǎi",
+      "thKana": "ラップ チョーン マイ",
+      "ending": "question",
+      "note": "",
+      "scene": "convenience",
+      "variants": {
+        "male": {
+          "th": "รับช้อนไหมครับ",
+          "thRoman": "ráp chɔ́ɔn mǎi khráp",
+          "thKana": "ラップ チョーン マイ クラップ"
+        },
+        "female": {
+          "th": "รับช้อนไหมคะ",
+          "thRoman": "ráp chɔ́ɔn mǎi khá",
+          "thKana": "ラップ チョーン マイ カ"
+        }
+      }
+    },
+    {
+      "id": "service-047",
+      "type": "service",
+      "category": "コンビニ",
+      "categoryTh": "ร้านสะดวกซื้อ",
+      "ja": "ストローは要りますか。",
+      "jaHira": "すとろーはいりますか。",
+      "jaRoman": "sutoroo wa irimasu ka",
+      "th": "รับหลอดไหม",
+      "thRoman": "ráp lɔ̀ɔt mǎi",
+      "thKana": "ラップ ロート マイ",
+      "ending": "question",
+      "note": "",
+      "scene": "convenience",
+      "variants": {
+        "male": {
+          "th": "รับหลอดไหมครับ",
+          "thRoman": "ráp lɔ̀ɔt mǎi khráp",
+          "thKana": "ラップ ロート マイ クラップ"
+        },
+        "female": {
+          "th": "รับหลอดไหมคะ",
+          "thRoman": "ráp lɔ̀ɔt mǎi khá",
+          "thKana": "ラップ ロート マイ カ"
+        }
+      }
+    },
+    {
+      "id": "service-048",
+      "type": "service",
+      "category": "コンビニ",
+      "categoryTh": "ร้านสะดวกซื้อ",
+      "ja": "氷は要りますか。",
+      "jaHira": "こおりはいりますか。",
+      "jaRoman": "koori wa irimasu ka",
+      "th": "รับน้ำแข็งไหม",
+      "thRoman": "ráp nám khɛ̌ŋ mǎi",
+      "thKana": "ラップ ナム ケン マイ",
+      "ending": "question",
+      "note": "",
+      "scene": "convenience",
+      "variants": {
+        "male": {
+          "th": "รับน้ำแข็งไหมครับ",
+          "thRoman": "ráp nám khɛ̌ŋ mǎi khráp",
+          "thKana": "ラップ ナム ケン マイ クラップ"
+        },
+        "female": {
+          "th": "รับน้ำแข็งไหมคะ",
+          "thRoman": "ráp nám khɛ̌ŋ mǎi khá",
+          "thKana": "ラップ ナム ケン マイ カ"
+        }
+      }
+    },
+    {
+      "id": "service-049",
+      "type": "service",
+      "category": "コンビニ",
+      "categoryTh": "ร้านสะดวกซื้อ",
+      "ja": "お湯はこちらです。",
+      "jaHira": "おゆはこちらです。",
+      "jaRoman": "oyu wa kochira desu",
+      "th": "น้ำร้อนอยู่ตรงนี้",
+      "thRoman": "nám rɔ́ɔn yùu troŋ níi",
+      "thKana": "ナム ローン ユー トロン ニー",
+      "ending": "statement",
+      "note": "",
+      "scene": "convenience",
+      "variants": {
+        "male": {
+          "th": "น้ำร้อนอยู่ตรงนี้ครับ",
+          "thRoman": "nám rɔ́ɔn yùu troŋ níi khráp",
+          "thKana": "ナム ローン ユー トロン ニー クラップ"
+        },
+        "female": {
+          "th": "น้ำร้อนอยู่ตรงนี้ค่ะ",
+          "thRoman": "nám rɔ́ɔn yùu troŋ níi khâ",
+          "thKana": "ナム ローン ユー トロン ニー カ"
+        }
+      }
+    },
+    {
+      "id": "service-050",
+      "type": "service",
+      "category": "コンビニ",
+      "categoryTh": "ร้านสะดวกซื้อ",
+      "ja": "ゴミ箱はこちらです。",
+      "jaHira": "ごみばこはこちらです。",
+      "jaRoman": "gomibako wa kochira desu",
+      "th": "ถังขยะอยู่ตรงนี้",
+      "thRoman": "thǎŋ khà yà yùu troŋ níi",
+      "thKana": "タン カ ヤ ユー トロン ニー",
+      "ending": "statement",
+      "note": "",
+      "scene": "convenience",
+      "variants": {
+        "male": {
+          "th": "ถังขยะอยู่ตรงนี้ครับ",
+          "thRoman": "thǎŋ khà yà yùu troŋ níi khráp",
+          "thKana": "タン カ ヤ ユー トロン ニー クラップ"
+        },
+        "female": {
+          "th": "ถังขยะอยู่ตรงนี้ค่ะ",
+          "thRoman": "thǎŋ khà yà yùu troŋ níi khâ",
+          "thKana": "タン カ ヤ ユー トロン ニー カ"
+        }
+      }
+    },
+    {
+      "id": "service-051",
+      "type": "service",
+      "category": "コンビニ",
+      "categoryTh": "ร้านสะดวกซื้อ",
+      "ja": "会員ですか。",
+      "jaHira": "かいいんですか。",
+      "jaRoman": "kaiin desu ka.",
+      "th": "เป็นสมาชิกไหม",
+      "thRoman": "pen sà maa chík mǎi",
+      "thKana": "ペン サマーチック マイ",
+      "ending": "question",
+      "note": "",
+      "scene": "convenience",
+      "variants": {
+        "male": {
+          "th": "เป็นสมาชิกไหมครับ",
+          "thRoman": "pen sà maa chík mǎi khráp",
+          "thKana": "ペン サマーチック マイ クラップ"
+        },
+        "female": {
+          "th": "เป็นสมาชิกไหมคะ",
+          "thRoman": "pen sà maa chík mǎi khá",
+          "thKana": "ペン サマーチック マイ カ"
+        }
+      }
+    },
+    {
+      "id": "service-052",
+      "type": "service",
+      "category": "コンビニ",
+      "categoryTh": "ร้านสะดวกซื้อ",
+      "ja": "ポイントを使いますか。",
+      "jaHira": "ぽいんとをつかいますか。",
+      "jaRoman": "pointo o tsukaimasu ka.",
+      "th": "ใช้แต้มไหม",
+      "thRoman": "chái tɛ̂ɛm mǎi",
+      "thKana": "チャイ テーム マイ",
+      "ending": "question",
+      "note": "",
+      "scene": "convenience",
+      "variants": {
+        "male": {
+          "th": "ใช้แต้มไหมครับ",
+          "thRoman": "chái tɛ̂ɛm mǎi khráp",
+          "thKana": "チャイ テーム マイ クラップ"
+        },
+        "female": {
+          "th": "ใช้แต้มไหมคะ",
+          "thRoman": "chái tɛ̂ɛm mǎi khá",
+          "thKana": "チャイ テーム マイ カ"
+        }
+      }
+    },
+    {
+      "id": "service-053",
+      "type": "service",
+      "category": "コンビニ",
+      "categoryTh": "ร้านสะดวกซื้อ",
+      "ja": "レシートは必要ですか。",
+      "jaHira": "れしーとはひつようですか。",
+      "jaRoman": "reshiito wa hitsuyou desu ka.",
+      "th": "รับใบเสร็จไหม",
+      "thRoman": "ráp bai sèt mǎi",
+      "thKana": "ラップ バイセット マイ",
+      "ending": "question",
+      "note": "",
+      "scene": "convenience",
+      "variants": {
+        "male": {
+          "th": "รับใบเสร็จไหมครับ",
+          "thRoman": "ráp bai sèt mǎi khráp",
+          "thKana": "ラップ バイセット マイ クラップ"
+        },
+        "female": {
+          "th": "รับใบเสร็จไหมคะ",
+          "thRoman": "ráp bai sèt mǎi khá",
+          "thKana": "ラップ バイセット マイ カ"
+        }
+      }
+    },
+    {
+      "id": "service-054",
+      "type": "service",
+      "category": "コンビニ",
+      "categoryTh": "ร้านสะดวกซื้อ",
+      "ja": "全部で100バーツです。",
+      "jaHira": "ぜんぶでひゃくばーつです。",
+      "jaRoman": "zenbu de hyaku baatsu desu.",
+      "th": "ทั้งหมดหนึ่งร้อยบาท",
+      "thRoman": "tháŋ mòt nɯ̀ŋ rɔ́ɔi bàat",
+      "thKana": "タング モット ヌン ローイ バート",
+      "ending": "statement",
+      "note": "",
+      "scene": "convenience",
+      "variants": {
+        "male": {
+          "th": "ทั้งหมดหนึ่งร้อยบาทครับ",
+          "thRoman": "tháŋ mòt nɯ̀ŋ rɔ́ɔi bàat khráp",
+          "thKana": "タング モット ヌン ローイ バート クラップ"
+        },
+        "female": {
+          "th": "ทั้งหมดหนึ่งร้อยบาทค่ะ",
+          "thRoman": "tháŋ mòt nɯ̀ŋ rɔ́ɔi bàat khâ",
+          "thKana": "タング モット ヌン ローイ バート カ"
+        }
+      }
+    },
+    {
+      "id": "service-055",
+      "type": "service",
+      "category": "コンビニ",
+      "categoryTh": "ร้านสะดวกซื้อ",
+      "ja": "お支払いは現金ですか、カードですか。",
+      "jaHira": "おしはらいはげんきんですか、かーどですか。",
+      "jaRoman": "o shiharai wa genkin desu ka, kaado desu ka.",
+      "th": "จ่ายเงินสดหรือบัตร",
+      "thRoman": "càai ŋən sòt rɯ̌ɯ bàt",
+      "thKana": "ジャーイ グン ソット ルー バット",
+      "ending": "question",
+      "note": "",
+      "scene": "convenience",
+      "variants": {
+        "male": {
+          "th": "จ่ายเงินสดหรือบัตรครับ",
+          "thRoman": "càai ŋən sòt rɯ̌ɯ bàt khráp",
+          "thKana": "ジャーイ グン ソット ルー バット クラップ"
+        },
+        "female": {
+          "th": "จ่ายเงินสดหรือบัตรคะ",
+          "thRoman": "càai ŋən sòt rɯ̌ɯ bàt khá",
+          "thKana": "ジャーイ グン ソット ルー バット カ"
+        }
+      }
+    },
+    {
+      "id": "service-056",
+      "type": "service",
+      "category": "コンビニ",
+      "categoryTh": "ร้านสะดวกซื้อ",
+      "ja": "QRコードはこちらです。",
+      "jaHira": "きゅーあーるこーどはこちらです。",
+      "jaRoman": "kyuu aaru koodo wa kochira desu.",
+      "th": "คิวอาร์โค้ดอยู่ตรงนี้",
+      "thRoman": "khiu aa khóot yùu troŋ níi",
+      "thKana": "キウ アー コート ユー トロンニー",
+      "ending": "statement",
+      "note": "",
+      "scene": "convenience",
+      "variants": {
+        "male": {
+          "th": "คิวอาร์โค้ดอยู่ตรงนี้ครับ",
+          "thRoman": "khiu aa khóot yùu troŋ níi khráp",
+          "thKana": "キウ アー コート ユー トロンニー クラップ"
+        },
+        "female": {
+          "th": "คิวอาร์โค้ดอยู่ตรงนี้ค่ะ",
+          "thRoman": "khiu aa khóot yùu troŋ níi khâ",
+          "thKana": "キウ アー コート ユー トロンニー カ"
+        }
+      }
+    },
+    {
+      "id": "service-057",
+      "type": "service",
+      "category": "コンビニ",
+      "categoryTh": "ร้านสะดวกซื้อ",
+      "ja": "ここにカードをタッチしてください。",
+      "jaHira": "ここにかーどをたっちしてください。",
+      "jaRoman": "koko ni kaado o tacchi shite kudasai.",
+      "th": "แตะบัตรตรงนี้",
+      "thRoman": "tɛ̀ bàt troŋ níi",
+      "thKana": "テ バット トロンニー",
+      "ending": "soft",
+      "note": "",
+      "scene": "convenience",
+      "variants": {
+        "male": {
+          "th": "แตะบัตรตรงนี้นะครับ",
+          "thRoman": "tɛ̀ bàt troŋ níi ná khráp",
+          "thKana": "テ バット トロンニー ナ クラップ"
+        },
+        "female": {
+          "th": "แตะบัตรตรงนี้นะคะ",
+          "thRoman": "tɛ̀ bàt troŋ níi ná khá",
+          "thKana": "テ バット トロンニー ナ カ"
+        }
+      }
+    },
+    {
+      "id": "service-058",
+      "type": "service",
+      "category": "コンビニ",
+      "categoryTh": "ร้านสะดวกซื้อ",
+      "ja": "暗証番号を入力してください。",
+      "jaHira": "あんしょうばんごうをにゅうりょくしてください。",
+      "jaRoman": "anshou bangou o nyuuryoku shite kudasai.",
+      "th": "กดรหัสได้เลย",
+      "thRoman": "kòt rá hàt dâi ləəi",
+      "thKana": "コット ラハット ダイ ルーイ",
+      "ending": "statement",
+      "note": "",
+      "scene": "convenience",
+      "variants": {
+        "male": {
+          "th": "กดรหัสได้เลยครับ",
+          "thRoman": "kòt rá hàt dâi ləəi khráp",
+          "thKana": "コット ラハット ダイ ルーイ クラップ"
+        },
+        "female": {
+          "th": "กดรหัสได้เลยค่ะ",
+          "thRoman": "kòt rá hàt dâi ləəi khâ",
+          "thKana": "コット ラハット ダイ ルーイ カ"
+        }
+      }
+    },
+    {
+      "id": "service-059",
+      "type": "service",
+      "category": "コンビニ",
+      "categoryTh": "ร้านสะดวกซื้อ",
+      "ja": "お釣りです。",
+      "jaHira": "おつりです。",
+      "jaRoman": "o tsuri desu.",
+      "th": "นี่เงินทอน",
+      "thRoman": "nîi ŋən thɔɔn",
+      "thKana": "ニー グン トーン",
+      "ending": "statement",
+      "note": "",
+      "scene": "convenience",
+      "variants": {
+        "male": {
+          "th": "นี่เงินทอนครับ",
+          "thRoman": "nîi ŋən thɔɔn khráp",
+          "thKana": "ニー グン トーン クラップ"
+        },
+        "female": {
+          "th": "นี่เงินทอนค่ะ",
+          "thRoman": "nîi ŋən thɔɔn khâ",
+          "thKana": "ニー グン トーン カ"
+        }
+      }
+    },
+    {
+      "id": "service-060",
+      "type": "service",
+      "category": "コンビニ",
+      "categoryTh": "ร้านสะดวกซื้อ",
+      "ja": "お釣りをご確認ください。",
+      "jaHira": "おつりをごかくにんください。",
+      "jaRoman": "o tsuri o go kakunin kudasai.",
+      "th": "กรุณาตรวจเงินทอน",
+      "thRoman": "kà rú naa trùat ŋən thɔɔn",
+      "thKana": "カルナー トルアット グン トーン",
+      "ending": "statement",
+      "note": "",
+      "scene": "convenience",
+      "variants": {
+        "male": {
+          "th": "กรุณาตรวจเงินทอนครับ",
+          "thRoman": "kà rú naa trùat ŋən thɔɔn khráp",
+          "thKana": "カルナー トルアット グン トーン クラップ"
+        },
+        "female": {
+          "th": "กรุณาตรวจเงินทอนค่ะ",
+          "thRoman": "kà rú naa trùat ŋən thɔɔn khâ",
+          "thKana": "カルナー トルアット グン トーン カ"
+        }
+      }
+    },
+    {
+      "id": "service-061",
+      "type": "service",
+      "category": "コンビニ",
+      "categoryTh": "ร้านสะดวกซื้อ",
+      "ja": "細かいお金はありますか。",
+      "jaHira": "こまかいおかねはありますか。",
+      "jaRoman": "komakai o kane wa arimasu ka.",
+      "th": "มีเงินย่อยไหม",
+      "thRoman": "mii ŋən yɔ̂i mǎi",
+      "thKana": "ミー グン ヨイ マイ",
+      "ending": "question",
+      "note": "",
+      "scene": "convenience",
+      "variants": {
+        "male": {
+          "th": "มีเงินย่อยไหมครับ",
+          "thRoman": "mii ŋən yɔ̂i mǎi khráp",
+          "thKana": "ミー グン ヨイ マイ クラップ"
+        },
+        "female": {
+          "th": "มีเงินย่อยไหมคะ",
+          "thRoman": "mii ŋən yɔ̂i mǎi khá",
+          "thKana": "ミー グン ヨイ マイ カ"
+        }
+      }
+    },
+    {
+      "id": "service-062",
+      "type": "service",
+      "category": "コンビニ",
+      "categoryTh": "ร้านสะดวกซื้อ",
+      "ja": "袋を分けますか。",
+      "jaHira": "ふくろをわけますか。",
+      "jaRoman": "fukuro o wakemasu ka.",
+      "th": "แยกถุงไหม",
+      "thRoman": "yɛ̂ɛk thǔŋ mǎi",
+      "thKana": "イェーク トゥン マイ",
+      "ending": "question",
+      "note": "",
+      "scene": "convenience",
+      "variants": {
+        "male": {
+          "th": "แยกถุงไหมครับ",
+          "thRoman": "yɛ̂ɛk thǔŋ mǎi khráp",
+          "thKana": "イェーク トゥン マイ クラップ"
+        },
+        "female": {
+          "th": "แยกถุงไหมคะ",
+          "thRoman": "yɛ̂ɛk thǔŋ mǎi khá",
+          "thKana": "イェーク トゥン マイ カ"
+        }
+      }
+    },
+    {
+      "id": "service-063",
+      "type": "service",
+      "category": "コンビニ",
+      "categoryTh": "ร้านสะดวกซื้อ",
+      "ja": "温め終わりました。",
+      "jaHira": "あたためおわりました。",
+      "jaRoman": "atatame owarimashita.",
+      "th": "อุ่นเสร็จแล้ว",
+      "thRoman": "ùn sèt lɛ́ɛo",
+      "thKana": "ウン セット レーオ",
+      "ending": "statement",
+      "note": "",
+      "scene": "convenience",
+      "variants": {
+        "male": {
+          "th": "อุ่นเสร็จแล้วครับ",
+          "thRoman": "ùn sèt lɛ́ɛo khráp",
+          "thKana": "ウン セット レーオ クラップ"
+        },
+        "female": {
+          "th": "อุ่นเสร็จแล้วค่ะ",
+          "thRoman": "ùn sèt lɛ́ɛo khâ",
+          "thKana": "ウン セット レーオ カ"
+        }
+      }
+    },
+    {
+      "id": "service-064",
+      "type": "service",
+      "category": "コンビニ",
+      "categoryTh": "ร้านสะดวกซื้อ",
+      "ja": "消費期限はこちらです。",
+      "jaHira": "しょうひきげんはこちらです。",
+      "jaRoman": "shouhi kigen wa kochira desu.",
+      "th": "วันหมดอายุอยู่ตรงนี้",
+      "thRoman": "wan mòt aa yú yùu troŋ níi",
+      "thKana": "ワン モット アーユ ユー トロンニー",
+      "ending": "statement",
+      "note": "",
+      "scene": "convenience",
+      "variants": {
+        "male": {
+          "th": "วันหมดอายุอยู่ตรงนี้ครับ",
+          "thRoman": "wan mòt aa yú yùu troŋ níi khráp",
+          "thKana": "ワン モット アーユ ユー トロンニー クラップ"
+        },
+        "female": {
+          "th": "วันหมดอายุอยู่ตรงนี้ค่ะ",
+          "thRoman": "wan mòt aa yú yùu troŋ níi khâ",
+          "thKana": "ワン モット アーユ ユー トロンニー カ"
+        }
+      }
+    },
+    {
+      "id": "service-065",
+      "type": "service",
+      "category": "コンビニ",
+      "categoryTh": "ร้านสะดวกซื้อ",
+      "ja": "24時間営業です。",
+      "jaHira": "にじゅうよじかんえいぎょうです。",
+      "jaRoman": "nijuu yo jikan eigyou desu.",
+      "th": "เปิดยี่สิบสี่ชั่วโมง",
+      "thRoman": "pə̀ət yîi sìp sìi chûa mooŋ",
+      "thKana": "プート イーシップ シー チュア モーン",
+      "ending": "statement",
+      "note": "",
+      "scene": "convenience",
+      "variants": {
+        "male": {
+          "th": "เปิดยี่สิบสี่ชั่วโมงครับ",
+          "thRoman": "pə̀ət yîi sìp sìi chûa mooŋ khráp",
+          "thKana": "プート イーシップ シー チュア モーン クラップ"
+        },
+        "female": {
+          "th": "เปิดยี่สิบสี่ชั่วโมงค่ะ",
+          "thRoman": "pə̀ət yîi sìp sìi chûa mooŋ khâ",
+          "thKana": "プート イーシップ シー チュア モーン カ"
+        }
+      }
+    },
+    {
+      "id": "service-066",
+      "type": "service",
+      "category": "カフェ",
+      "categoryTh": "คาเฟ่",
+      "ja": "ホットですか、アイスですか。",
+      "jaHira": "ほっとですか、あいすですか。",
+      "jaRoman": "hotto desu ka, aisu desu ka.",
+      "th": "รับร้อนหรือเย็น",
+      "thRoman": "ráp rɔ́ɔn rɯ̌ɯ yen",
+      "thKana": "ラップ ローン ルー イェン",
+      "ending": "question",
+      "note": "",
+      "scene": "cafe",
+      "variants": {
+        "male": {
+          "th": "รับร้อนหรือเย็นครับ",
+          "thRoman": "ráp rɔ́ɔn rɯ̌ɯ yen khráp",
+          "thKana": "ラップ ローン ルー イェン クラップ"
+        },
+        "female": {
+          "th": "รับร้อนหรือเย็นคะ",
+          "thRoman": "ráp rɔ́ɔn rɯ̌ɯ yen khá",
+          "thKana": "ラップ ローン ルー イェン カ"
+        }
+      }
+    },
+    {
+      "id": "service-067",
+      "type": "service",
+      "category": "カフェ",
+      "categoryTh": "คาเฟ่",
+      "ja": "甘さはどうしますか。",
+      "jaHira": "あまさはどうしますか。",
+      "jaRoman": "amasa wa dou shimasu ka.",
+      "th": "หวานระดับไหนดี",
+      "thRoman": "wǎan rá dàp nǎi dii",
+      "thKana": "ワーン ラダップ ナイ ディー",
+      "ending": "question",
+      "note": "",
+      "scene": "cafe",
+      "variants": {
+        "male": {
+          "th": "หวานระดับไหนดีครับ",
+          "thRoman": "wǎan rá dàp nǎi dii khráp",
+          "thKana": "ワーン ラダップ ナイ ディー クラップ"
+        },
+        "female": {
+          "th": "หวานระดับไหนดีคะ",
+          "thRoman": "wǎan rá dàp nǎi dii khá",
+          "thKana": "ワーン ラダップ ナイ ディー カ"
+        }
+      }
+    },
+    {
+      "id": "service-068",
+      "type": "service",
+      "category": "カフェ",
+      "categoryTh": "คาเฟ่",
+      "ja": "甘さ控えめにしますか。",
+      "jaHira": "あまさひかえめにしますか。",
+      "jaRoman": "amasa hikaeme ni shimasu ka.",
+      "th": "รับหวานน้อยไหม",
+      "thRoman": "ráp wǎan nɔ́ɔi mǎi",
+      "thKana": "ラップ ワーン ノーイ マイ",
+      "ending": "question",
+      "note": "",
+      "scene": "cafe",
+      "variants": {
+        "male": {
+          "th": "รับหวานน้อยไหมครับ",
+          "thRoman": "ráp wǎan nɔ́ɔi mǎi khráp",
+          "thKana": "ラップ ワーン ノーイ マイ クラップ"
+        },
+        "female": {
+          "th": "รับหวานน้อยไหมคะ",
+          "thRoman": "ráp wǎan nɔ́ɔi mǎi khá",
+          "thKana": "ラップ ワーン ノーイ マイ カ"
+        }
+      }
+    },
+    {
+      "id": "service-069",
+      "type": "service",
+      "category": "カフェ",
+      "categoryTh": "คาเฟ่",
+      "ja": "砂糖なしですね。",
+      "jaHira": "さとうなしですね。",
+      "jaRoman": "satou nashi desu ne.",
+      "th": "ไม่ใส่น้ำตาลใช่ไหม",
+      "thRoman": "mâi sài nám taan châi mǎi",
+      "thKana": "マイ サイ ナム ターン チャイ マイ",
+      "ending": "question",
+      "note": "",
+      "scene": "cafe",
+      "variants": {
+        "male": {
+          "th": "ไม่ใส่น้ำตาลใช่ไหมครับ",
+          "thRoman": "mâi sài nám taan châi mǎi khráp",
+          "thKana": "マイ サイ ナム ターン チャイ マイ クラップ"
+        },
+        "female": {
+          "th": "ไม่ใส่น้ำตาลใช่ไหมคะ",
+          "thRoman": "mâi sài nám taan châi mǎi khá",
+          "thKana": "マイ サイ ナム ターン チャイ マイ カ"
+        }
+      }
+    },
+    {
+      "id": "service-070",
+      "type": "service",
+      "category": "カフェ",
+      "categoryTh": "คาเฟ่",
+      "ja": "ミルクはどれにしますか。",
+      "jaHira": "みるくはどれにしますか。",
+      "jaRoman": "miruku wa dore ni shimasu ka.",
+      "th": "รับนมชนิดไหน",
+      "thRoman": "ráp nom chá nít nǎi",
+      "thKana": "ラップ ノム チャニット ナイ",
+      "ending": "question",
+      "note": "",
+      "scene": "cafe",
+      "variants": {
+        "male": {
+          "th": "รับนมชนิดไหนครับ",
+          "thRoman": "ráp nom chá nít nǎi khráp",
+          "thKana": "ラップ ノム チャニット ナイ クラップ"
+        },
+        "female": {
+          "th": "รับนมชนิดไหนคะ",
+          "thRoman": "ráp nom chá nít nǎi khá",
+          "thKana": "ラップ ノム チャニット ナイ カ"
+        }
+      }
+    },
+    {
+      "id": "service-071",
+      "type": "service",
+      "category": "カフェ",
+      "categoryTh": "คาเฟ่",
+      "ja": "ミルクを追加しますか。",
+      "jaHira": "みるくをついかしますか。",
+      "jaRoman": "miruku o tsuika shimasu ka.",
+      "th": "ใส่นมเพิ่มไหม",
+      "thRoman": "sài nom phə̂əm mǎi",
+      "thKana": "サイ ノム プーム マイ",
+      "ending": "question",
+      "note": "",
+      "scene": "cafe",
+      "variants": {
+        "male": {
+          "th": "ใส่นมเพิ่มไหมครับ",
+          "thRoman": "sài nom phə̂əm mǎi khráp",
+          "thKana": "サイ ノム プーム マイ クラップ"
+        },
+        "female": {
+          "th": "ใส่นมเพิ่มไหมคะ",
+          "thRoman": "sài nom phə̂əm mǎi khá",
+          "thKana": "サイ ノム プーム マイ カ"
+        }
+      }
+    },
+    {
+      "id": "service-072",
+      "type": "service",
+      "category": "カフェ",
+      "categoryTh": "คาเฟ่",
+      "ja": "ケーキもいかがですか。",
+      "jaHira": "けーきもいかがですか。",
+      "jaRoman": "keeki mo ikaga desu ka.",
+      "th": "รับเค้กเพิ่มไหม",
+      "thRoman": "ráp khéek phə̂əm mǎi",
+      "thKana": "ラップ ケーク プーム マイ",
+      "ending": "question",
+      "note": "",
+      "scene": "cafe",
+      "variants": {
+        "male": {
+          "th": "รับเค้กเพิ่มไหมครับ",
+          "thRoman": "ráp khéek phə̂əm mǎi khráp",
+          "thKana": "ラップ ケーク プーム マイ クラップ"
+        },
+        "female": {
+          "th": "รับเค้กเพิ่มไหมคะ",
+          "thRoman": "ráp khéek phə̂əm mǎi khá",
+          "thKana": "ラップ ケーク プーム マイ カ"
+        }
+      }
+    },
+    {
+      "id": "service-073",
+      "type": "service",
+      "category": "カフェ",
+      "categoryTh": "คาเฟ่",
+      "ja": "氷を少なめにしますか。",
+      "jaHira": "こおりをすくなめにしますか。",
+      "jaRoman": "koori o sukuname ni shimasu ka.",
+      "th": "รับน้ำแข็งน้อยไหม",
+      "thRoman": "ráp nám khɛ̌ŋ nɔ́ɔi mǎi",
+      "thKana": "ラップ ナム ケン ノーイ マイ",
+      "ending": "question",
+      "note": "",
+      "scene": "cafe",
+      "variants": {
+        "male": {
+          "th": "รับน้ำแข็งน้อยไหมครับ",
+          "thRoman": "ráp nám khɛ̌ŋ nɔ́ɔi mǎi khráp",
+          "thKana": "ラップ ナム ケン ノーイ マイ クラップ"
+        },
+        "female": {
+          "th": "รับน้ำแข็งน้อยไหมคะ",
+          "thRoman": "ráp nám khɛ̌ŋ nɔ́ɔi mǎi khá",
+          "thKana": "ラップ ナム ケン ノーイ マイ カ"
+        }
+      }
+    },
+    {
+      "id": "service-074",
+      "type": "service",
+      "category": "カフェ",
+      "categoryTh": "คาเฟ่",
+      "ja": "お呼びするお名前を教えてください。",
+      "jaHira": "およびするおなまえをおしえてください。",
+      "jaRoman": "o yobi suru o namae o oshiete kudasai.",
+      "th": "ให้เรียกชื่ออะไร",
+      "thRoman": "hâi rîak chɯ̂ɯ à rai",
+      "thKana": "ハイ リアック チュー アライ",
+      "ending": "question",
+      "note": "",
+      "scene": "cafe",
+      "variants": {
+        "male": {
+          "th": "ให้เรียกชื่ออะไรครับ",
+          "thRoman": "hâi rîak chɯ̂ɯ à rai khráp",
+          "thKana": "ハイ リアック チュー アライ クラップ"
+        },
+        "female": {
+          "th": "ให้เรียกชื่ออะไรคะ",
+          "thRoman": "hâi rîak chɯ̂ɯ à rai khá",
+          "thKana": "ハイ リアック チュー アライ カ"
+        }
+      }
+    },
+    {
+      "id": "service-075",
+      "type": "service",
+      "category": "カフェ",
+      "categoryTh": "คาเฟ่",
+      "ja": "番号でお呼びします。",
+      "jaHira": "ばんごうでおよびします。",
+      "jaRoman": "bangou de o yobi shimasu.",
+      "th": "จะเรียกตามหมายเลข",
+      "thRoman": "cà rîak taam mǎai lêek",
+      "thKana": "ジャ リアック ターム マーイ レーク",
+      "ending": "statement",
+      "note": "",
+      "scene": "cafe",
+      "variants": {
+        "male": {
+          "th": "จะเรียกตามหมายเลขครับ",
+          "thRoman": "cà rîak taam mǎai lêek khráp",
+          "thKana": "ジャ リアック ターム マーイ レーク クラップ"
+        },
+        "female": {
+          "th": "จะเรียกตามหมายเลขค่ะ",
+          "thRoman": "cà rîak taam mǎai lêek khâ",
+          "thKana": "ジャ リアック ターム マーイ レーク カ"
+        }
+      }
+    },
+    {
+      "id": "service-076",
+      "type": "service",
+      "category": "カフェ",
+      "categoryTh": "คาเฟ่",
+      "ja": "あちらでお受け取りください。",
+      "jaHira": "あちらでおうけとりください。",
+      "jaRoman": "achira de o uketori kudasai.",
+      "th": "รับตรงนั้นได้เลย",
+      "thRoman": "ráp troŋ nán dâi ləəi",
+      "thKana": "ラップ トロンナン ダイ ルーイ",
+      "ending": "statement",
+      "note": "",
+      "scene": "cafe",
+      "variants": {
+        "male": {
+          "th": "รับตรงนั้นได้เลยครับ",
+          "thRoman": "ráp troŋ nán dâi ləəi khráp",
+          "thKana": "ラップ トロンナン ダイ ルーイ クラップ"
+        },
+        "female": {
+          "th": "รับตรงนั้นได้เลยค่ะ",
+          "thRoman": "ráp troŋ nán dâi ləəi khâ",
+          "thKana": "ラップ トロンナン ダイ ルーイ カ"
+        }
+      }
+    },
+    {
+      "id": "service-077",
+      "type": "service",
+      "category": "カフェ",
+      "categoryTh": "คาเฟ่",
+      "ja": "ふたは必要ですか。",
+      "jaHira": "ふたはひつようですか。",
+      "jaRoman": "futa wa hitsuyou desu ka.",
+      "th": "รับฝาปิดไหม",
+      "thRoman": "ráp fǎa pìt mǎi",
+      "thKana": "ラップ ファー ピット マイ",
+      "ending": "question",
+      "note": "",
+      "scene": "cafe",
+      "variants": {
+        "male": {
+          "th": "รับฝาปิดไหมครับ",
+          "thRoman": "ráp fǎa pìt mǎi khráp",
+          "thKana": "ラップ ファー ピット マイ クラップ"
+        },
+        "female": {
+          "th": "รับฝาปิดไหมคะ",
+          "thRoman": "ráp fǎa pìt mǎi khá",
+          "thKana": "ラップ ファー ピット マイ カ"
+        }
+      }
+    },
+    {
+      "id": "service-078",
+      "type": "service",
+      "category": "カフェ",
+      "categoryTh": "คาเฟ่",
+      "ja": "Wi-Fiのパスワードはこちらです。",
+      "jaHira": "わいふぁいのぱすわーどはこちらです。",
+      "jaRoman": "wai fai no pasuwaado wa kochira desu.",
+      "th": "รหัสไวไฟอยู่ตรงนี้",
+      "thRoman": "rá hàt waai faai yùu troŋ níi",
+      "thKana": "ラハット ワーイ ファーイ ユー トロンニー",
+      "ending": "statement",
+      "note": "",
+      "scene": "cafe",
+      "variants": {
+        "male": {
+          "th": "รหัสไวไฟอยู่ตรงนี้ครับ",
+          "thRoman": "rá hàt waai faai yùu troŋ níi khráp",
+          "thKana": "ラハット ワーイ ファーイ ユー トロンニー クラップ"
+        },
+        "female": {
+          "th": "รหัสไวไฟอยู่ตรงนี้ค่ะ",
+          "thRoman": "rá hàt waai faai yùu troŋ níi khâ",
+          "thKana": "ラハット ワーイ ファーイ ユー トロンニー カ"
+        }
+      }
+    },
+    {
+      "id": "service-079",
+      "type": "service",
+      "category": "カフェ",
+      "categoryTh": "คาเฟ่",
+      "ja": "こちらのコンセントを使えます。",
+      "jaHira": "こちらのこんせんとをつかえます。",
+      "jaRoman": "kochira no konsento o tsukaemasu.",
+      "th": "ใช้ปลั๊กตรงนี้ได้เลย",
+      "thRoman": "chái plák troŋ níi dâi ləəi",
+      "thKana": "チャイ プラック トロンニー ダイ ルーイ",
+      "ending": "statement",
+      "note": "",
+      "scene": "cafe",
+      "variants": {
+        "male": {
+          "th": "ใช้ปลั๊กตรงนี้ได้เลยครับ",
+          "thRoman": "chái plák troŋ níi dâi ləəi khráp",
+          "thKana": "チャイ プラック トロンニー ダイ ルーイ クラップ"
+        },
+        "female": {
+          "th": "ใช้ปลั๊กตรงนี้ได้เลยค่ะ",
+          "thRoman": "chái plák troŋ níi dâi ləəi khâ",
+          "thKana": "チャイ プラック トロンニー ダイ ルーイ カ"
+        }
+      }
+    },
+    {
+      "id": "service-080",
+      "type": "service",
+      "category": "カフェ",
+      "categoryTh": "คาเฟ่",
+      "ja": "砂糖はこちらです。",
+      "jaHira": "さとうはこちらです。",
+      "jaRoman": "satou wa kochira desu.",
+      "th": "น้ำตาลอยู่ตรงนี้",
+      "thRoman": "nám taan yùu troŋ níi",
+      "thKana": "ナム ターン ユー トロンニー",
+      "ending": "statement",
+      "note": "",
+      "scene": "cafe",
+      "variants": {
+        "male": {
+          "th": "น้ำตาลอยู่ตรงนี้ครับ",
+          "thRoman": "nám taan yùu troŋ níi khráp",
+          "thKana": "ナム ターン ユー トロンニー クラップ"
+        },
+        "female": {
+          "th": "น้ำตาลอยู่ตรงนี้ค่ะ",
+          "thRoman": "nám taan yùu troŋ níi khâ",
+          "thKana": "ナム ターン ユー トロンニー カ"
+        }
+      }
+    },
+    {
+      "id": "service-081",
+      "type": "service",
+      "category": "接客の共通表現",
+      "categoryTh": "งานบริการทั่วไป",
+      "ja": "もう一度言っていただけますか。",
+      "jaHira": "もういちどいっていただけますか。",
+      "jaRoman": "mou ichido itte itadakemasu ka",
+      "th": "พูดอีกครั้งได้ไหม",
+      "thRoman": "phûut ìik khráŋ dâi mǎi",
+      "thKana": "プート イーク クラン ダイ マイ",
+      "ending": "question",
+      "note": "",
+      "scene": "common",
+      "variants": {
+        "male": {
+          "th": "พูดอีกครั้งได้ไหมครับ",
+          "thRoman": "phûut ìik khráŋ dâi mǎi khráp",
+          "thKana": "プート イーク クラン ダイ マイ クラップ"
+        },
+        "female": {
+          "th": "พูดอีกครั้งได้ไหมคะ",
+          "thRoman": "phûut ìik khráŋ dâi mǎi khá",
+          "thKana": "プート イーク クラン ダイ マイ カ"
+        }
+      }
+    },
+    {
+      "id": "service-082",
+      "type": "service",
+      "category": "接客の共通表現",
+      "categoryTh": "งานบริการทั่วไป",
+      "ja": "ゆっくり話してください。",
+      "jaHira": "ゆっくりはなしてください。",
+      "jaRoman": "yukkuri hanashite kudasai.",
+      "th": "พูดช้า ๆ ได้ไหม",
+      "thRoman": "phûut cháa cháa dâi mǎi",
+      "thKana": "プート チャー チャー ダイ マイ",
+      "ending": "question",
+      "note": "",
+      "scene": "common",
+      "variants": {
+        "male": {
+          "th": "พูดช้า ๆ ได้ไหมครับ",
+          "thRoman": "phûut cháa cháa dâi mǎi khráp",
+          "thKana": "プート チャー チャー ダイ マイ クラップ"
+        },
+        "female": {
+          "th": "พูดช้า ๆ ได้ไหมคะ",
+          "thRoman": "phûut cháa cháa dâi mǎi khá",
+          "thKana": "プート チャー チャー ダイ マイ カ"
+        }
+      }
+    },
+    {
+      "id": "service-083",
+      "type": "service",
+      "category": "接客の共通表現",
+      "categoryTh": "งานบริการทั่วไป",
+      "ja": "お待たせしてすみません。",
+      "jaHira": "おまたせしてすみません。",
+      "jaRoman": "o matase shite sumimasen.",
+      "th": "ขอโทษที่ให้รอ",
+      "thRoman": "khɔ̌ɔ thôot thîi hâi rɔɔ",
+      "thKana": "コー トート ティー ハイ ロー",
+      "ending": "statement",
+      "note": "",
+      "scene": "common",
+      "variants": {
+        "male": {
+          "th": "ขอโทษที่ให้รอครับ",
+          "thRoman": "khɔ̌ɔ thôot thîi hâi rɔɔ khráp",
+          "thKana": "コー トート ティー ハイ ロー クラップ"
+        },
+        "female": {
+          "th": "ขอโทษที่ให้รอค่ะ",
+          "thRoman": "khɔ̌ɔ thôot thîi hâi rɔɔ khâ",
+          "thKana": "コー トート ティー ハイ ロー カ"
+        }
+      }
+    },
+    {
+      "id": "service-084",
+      "type": "service",
+      "category": "接客の共通表現",
+      "categoryTh": "งานบริการทั่วไป",
+      "ja": "間違えてしまい、すみません。",
+      "jaHira": "まちがえてしまい、すみません。",
+      "jaRoman": "machigaete shimai, sumimasen.",
+      "th": "ขอโทษที่ทำผิด",
+      "thRoman": "khɔ̌ɔ thôot thîi tham phìt",
+      "thKana": "コー トート ティー タム ピット",
+      "ending": "statement",
+      "note": "",
+      "scene": "common",
+      "variants": {
+        "male": {
+          "th": "ขอโทษที่ทำผิดครับ",
+          "thRoman": "khɔ̌ɔ thôot thîi tham phìt khráp",
+          "thKana": "コー トート ティー タム ピット クラップ"
+        },
+        "female": {
+          "th": "ขอโทษที่ทำผิดค่ะ",
+          "thRoman": "khɔ̌ɔ thôot thîi tham phìt khâ",
+          "thKana": "コー トート ティー タム ピット カ"
+        }
+      }
+    },
+    {
+      "id": "service-085",
+      "type": "service",
+      "category": "接客の共通表現",
+      "categoryTh": "งานบริการทั่วไป",
+      "ja": "確認します。",
+      "jaHira": "かくにんします。",
+      "jaRoman": "kakunin shimasu.",
+      "th": "ขอตรวจสอบก่อน",
+      "thRoman": "khɔ̌ɔ trùat sɔ̀ɔp kɔ̀ɔn",
+      "thKana": "コー トルアット ソープ コーン",
+      "ending": "statement",
+      "note": "",
+      "scene": "common",
+      "variants": {
+        "male": {
+          "th": "ขอตรวจสอบก่อนครับ",
+          "thRoman": "khɔ̌ɔ trùat sɔ̀ɔp kɔ̀ɔn khráp",
+          "thKana": "コー トルアット ソープ コーン クラップ"
+        },
+        "female": {
+          "th": "ขอตรวจสอบก่อนค่ะ",
+          "thRoman": "khɔ̌ɔ trùat sɔ̀ɔp kɔ̀ɔn khâ",
+          "thKana": "コー トルアット ソープ コーン カ"
+        }
+      }
+    },
+    {
+      "id": "service-086",
+      "type": "service",
+      "category": "接客の共通表現",
+      "categoryTh": "งานบริการทั่วไป",
+      "ja": "店長を呼びます。",
+      "jaHira": "てんちょうをよびます。",
+      "jaRoman": "tenchou o yobimasu.",
+      "th": "จะเรียกผู้จัดการให้",
+      "thRoman": "cà rîak phûu càt kaan hâi",
+      "thKana": "ジャ リアック プー ジャット カーン ハイ",
+      "ending": "statement",
+      "note": "",
+      "scene": "common",
+      "variants": {
+        "male": {
+          "th": "จะเรียกผู้จัดการให้ครับ",
+          "thRoman": "cà rîak phûu càt kaan hâi khráp",
+          "thKana": "ジャ リアック プー ジャット カーン ハイ クラップ"
+        },
+        "female": {
+          "th": "จะเรียกผู้จัดการให้ค่ะ",
+          "thRoman": "cà rîak phûu càt kaan hâi khâ",
+          "thKana": "ジャ リアック プー ジャット カーン ハイ カ"
+        }
+      }
+    },
+    {
+      "id": "service-087",
+      "type": "service",
+      "category": "接客の共通表現",
+      "categoryTh": "งานบริการทั่วไป",
+      "ja": "使い方を説明します。",
+      "jaHira": "つかいかたをせつめいします。",
+      "jaRoman": "tsukaikata o setsumei shimasu.",
+      "th": "จะอธิบายวิธีใช้",
+      "thRoman": "cà à thí baai wí thii chái",
+      "thKana": "ジャ アティバーイ ウィティー チャイ",
+      "ending": "statement",
+      "note": "",
+      "scene": "common",
+      "variants": {
+        "male": {
+          "th": "จะอธิบายวิธีใช้ครับ",
+          "thRoman": "cà à thí baai wí thii chái khráp",
+          "thKana": "ジャ アティバーイ ウィティー チャイ クラップ"
+        },
+        "female": {
+          "th": "จะอธิบายวิธีใช้ค่ะ",
+          "thRoman": "cà à thí baai wí thii chái khâ",
+          "thKana": "ジャ アティバーイ ウィティー チャイ カ"
+        }
+      }
+    },
+    {
+      "id": "service-088",
+      "type": "service",
+      "category": "接客の共通表現",
+      "categoryTh": "งานบริการทั่วไป",
+      "ja": "お荷物を持ちましょうか。",
+      "jaHira": "おにもつをもちましょうか。",
+      "jaRoman": "o nimotsu o mochimashou ka.",
+      "th": "ให้ช่วยถือของไหม",
+      "thRoman": "hâi chûai thɯ̌ɯ khɔ̌ɔŋ mǎi",
+      "thKana": "ハイ チュアイ トゥー コーン マイ",
+      "ending": "question",
+      "note": "",
+      "scene": "common",
+      "variants": {
+        "male": {
+          "th": "ให้ช่วยถือของไหมครับ",
+          "thRoman": "hâi chûai thɯ̌ɯ khɔ̌ɔŋ mǎi khráp",
+          "thKana": "ハイ チュアイ トゥー コーン マイ クラップ"
+        },
+        "female": {
+          "th": "ให้ช่วยถือของไหมคะ",
+          "thRoman": "hâi chûai thɯ̌ɯ khɔ̌ɔŋ mǎi khá",
+          "thKana": "ハイ チュアイ トゥー コーン マイ カ"
+        }
+      }
+    },
+    {
+      "id": "service-089",
+      "type": "service",
+      "category": "接客の共通表現",
+      "categoryTh": "งานบริการทั่วไป",
+      "ja": "贈り物用に包みますか。",
+      "jaHira": "おくりものようにつつみますか。",
+      "jaRoman": "okurimono you ni tsutsumimasu ka.",
+      "th": "ให้ห่อของขวัญไหม",
+      "thRoman": "hâi hɔ̀ɔ khɔ̌ɔŋ khwǎn mǎi",
+      "thKana": "ハイ ホー コーン クワン マイ",
+      "ending": "question",
+      "note": "",
+      "scene": "common",
+      "variants": {
+        "male": {
+          "th": "ให้ห่อของขวัญไหมครับ",
+          "thRoman": "hâi hɔ̀ɔ khɔ̌ɔŋ khwǎn mǎi khráp",
+          "thKana": "ハイ ホー コーン クワン マイ クラップ"
+        },
+        "female": {
+          "th": "ให้ห่อของขวัญไหมคะ",
+          "thRoman": "hâi hɔ̀ɔ khɔ̌ɔŋ khwǎn mǎi khá",
+          "thKana": "ハイ ホー コーン クワン マイ カ"
+        }
+      }
+    },
+    {
+      "id": "service-090",
+      "type": "service",
+      "category": "接客の共通表現",
+      "categoryTh": "งานบริการทั่วไป",
+      "ja": "サイズはどれにしますか。",
+      "jaHira": "さいずはどれにしますか。",
+      "jaRoman": "saizu wa dore ni shimasu ka.",
+      "th": "รับขนาดไหน",
+      "thRoman": "ráp khà nàat nǎi",
+      "thKana": "ラップ カナート ナイ",
+      "ending": "question",
+      "note": "",
+      "scene": "common",
+      "variants": {
+        "male": {
+          "th": "รับขนาดไหนครับ",
+          "thRoman": "ráp khà nàat nǎi khráp",
+          "thKana": "ラップ カナート ナイ クラップ"
+        },
+        "female": {
+          "th": "รับขนาดไหนคะ",
+          "thRoman": "ráp khà nàat nǎi khá",
+          "thKana": "ラップ カナート ナイ カ"
+        }
+      }
+    },
+    {
+      "id": "service-091",
+      "type": "service",
+      "category": "接客の共通表現",
+      "categoryTh": "งานบริการทั่วไป",
+      "ja": "何色にしますか。",
+      "jaHira": "なにいろにしますか。",
+      "jaRoman": "nani iro ni shimasu ka.",
+      "th": "รับสีอะไร",
+      "thRoman": "ráp sǐi à rai",
+      "thKana": "ラップ シー アライ",
+      "ending": "question",
+      "note": "",
+      "scene": "common",
+      "variants": {
+        "male": {
+          "th": "รับสีอะไรครับ",
+          "thRoman": "ráp sǐi à rai khráp",
+          "thKana": "ラップ シー アライ クラップ"
+        },
+        "female": {
+          "th": "รับสีอะไรคะ",
+          "thRoman": "ráp sǐi à rai khá",
+          "thKana": "ラップ シー アライ カ"
+        }
+      }
+    },
+    {
+      "id": "service-092",
+      "type": "service",
+      "category": "接客の共通表現",
+      "categoryTh": "งานบริการทั่วไป",
+      "ja": "試着できます。",
+      "jaHira": "しちゃくできます。",
+      "jaRoman": "shichaku dekimasu.",
+      "th": "ลองใส่ได้เลย",
+      "thRoman": "lɔɔŋ sài dâi ləəi",
+      "thKana": "ローン サイ ダイ ルーイ",
+      "ending": "statement",
+      "note": "",
+      "scene": "common",
+      "variants": {
+        "male": {
+          "th": "ลองใส่ได้เลยครับ",
+          "thRoman": "lɔɔŋ sài dâi ləəi khráp",
+          "thKana": "ローン サイ ダイ ルーイ クラップ"
+        },
+        "female": {
+          "th": "ลองใส่ได้เลยค่ะ",
+          "thRoman": "lɔɔŋ sài dâi ləəi khâ",
+          "thKana": "ローン サイ ダイ ルーイ カ"
+        }
+      }
+    },
+    {
+      "id": "service-093",
+      "type": "service",
+      "category": "接客の共通表現",
+      "categoryTh": "งานบริการทั่วไป",
+      "ja": "レシートは取っておいてください。",
+      "jaHira": "れしーとはとっておいてください。",
+      "jaRoman": "reshiito wa totte oite kudasai.",
+      "th": "กรุณาเก็บใบเสร็จไว้",
+      "thRoman": "kà rú naa kèp bai sèt wái",
+      "thKana": "カルナー ケップ バイセット ワイ",
+      "ending": "statement",
+      "note": "",
+      "scene": "common",
+      "variants": {
+        "male": {
+          "th": "กรุณาเก็บใบเสร็จไว้ครับ",
+          "thRoman": "kà rú naa kèp bai sèt wái khráp",
+          "thKana": "カルナー ケップ バイセット ワイ クラップ"
+        },
+        "female": {
+          "th": "กรุณาเก็บใบเสร็จไว้ค่ะ",
+          "thRoman": "kà rú naa kèp bai sèt wái khâ",
+          "thKana": "カルナー ケップ バイセット ワイ カ"
+        }
+      }
+    },
+    {
+      "id": "service-094",
+      "type": "service",
+      "category": "接客の共通表現",
+      "categoryTh": "งานบริการทั่วไป",
+      "ja": "返品にはレシートが必要です。",
+      "jaHira": "へんぴんにはれしーとがひつようです。",
+      "jaRoman": "henpin ni wa reshiito ga hitsuyou desu.",
+      "th": "คืนสินค้าต้องมีใบเสร็จ",
+      "thRoman": "khɯɯn sǐn kháa tɔ̂ŋ mii bai sèt",
+      "thKana": "クーン シン カー トン ミー バイセット",
+      "ending": "statement",
+      "note": "",
+      "scene": "common",
+      "variants": {
+        "male": {
+          "th": "คืนสินค้าต้องมีใบเสร็จครับ",
+          "thRoman": "khɯɯn sǐn kháa tɔ̂ŋ mii bai sèt khráp",
+          "thKana": "クーン シン カー トン ミー バイセット クラップ"
+        },
+        "female": {
+          "th": "คืนสินค้าต้องมีใบเสร็จค่ะ",
+          "thRoman": "khɯɯn sǐn kháa tɔ̂ŋ mii bai sèt khâ",
+          "thKana": "クーン シン カー トン ミー バイセット カ"
+        }
+      }
+    },
+    {
+      "id": "service-095",
+      "type": "service",
+      "category": "接客の共通表現",
+      "categoryTh": "งานบริการทั่วไป",
+      "ja": "交換できます。",
+      "jaHira": "こうかんできます。",
+      "jaRoman": "koukan dekimasu.",
+      "th": "เปลี่ยนสินค้าได้",
+      "thRoman": "plìan sǐn kháa dâi",
+      "thKana": "プリアン シン カー ダイ",
+      "ending": "statement",
+      "note": "",
+      "scene": "common",
+      "variants": {
+        "male": {
+          "th": "เปลี่ยนสินค้าได้ครับ",
+          "thRoman": "plìan sǐn kháa dâi khráp",
+          "thKana": "プリアン シン カー ダイ クラップ"
+        },
+        "female": {
+          "th": "เปลี่ยนสินค้าได้ค่ะ",
+          "thRoman": "plìan sǐn kháa dâi khâ",
+          "thKana": "プリアン シン カー ダイ カ"
+        }
+      }
+    },
+    {
+      "id": "service-096",
+      "type": "service",
+      "category": "接客の共通表現",
+      "categoryTh": "งานบริการทั่วไป",
+      "ja": "お忘れ物をお探しですか。",
+      "jaHira": "おわすれものをおさがしですか。",
+      "jaRoman": "owasuremono o osagashi desu ka.",
+      "th": "กำลังหาของหายอยู่ไหม",
+      "thRoman": "kam laŋ hǎa khɔ̌ɔŋ hǎai yùu mǎi",
+      "thKana": "ガム ラン ハー コーン ハーイ ユー マイ",
+      "ending": "question",
+      "note": "",
+      "scene": "common",
+      "variants": {
+        "male": {
+          "th": "กำลังหาของหายอยู่ไหมครับ",
+          "thRoman": "kam laŋ hǎa khɔ̌ɔŋ hǎai yùu mǎi khráp",
+          "thKana": "ガム ラン ハー コーン ハーイ ユー マイ クラップ"
+        },
+        "female": {
+          "th": "กำลังหาของหายอยู่ไหมคะ",
+          "thRoman": "kam laŋ hǎa khɔ̌ɔŋ hǎai yùu mǎi khá",
+          "thKana": "ガム ラン ハー コーン ハーイ ユー マイ カ"
+        }
+      }
+    },
+    {
+      "id": "service-097",
+      "type": "service",
+      "category": "接客の共通表現",
+      "categoryTh": "งานบริการทั่วไป",
+      "ja": "トイレはあちらです。",
+      "jaHira": "といれはあちらです。",
+      "jaRoman": "toire wa achira desu.",
+      "th": "ห้องน้ำอยู่ทางนั้น",
+      "thRoman": "hɔ̂ŋ náam yùu thaaŋ nán",
+      "thKana": "ホン ナーム ユー ターン ナン",
+      "ending": "statement",
+      "note": "",
+      "scene": "common",
+      "variants": {
+        "male": {
+          "th": "ห้องน้ำอยู่ทางนั้นครับ",
+          "thRoman": "hɔ̂ŋ náam yùu thaaŋ nán khráp",
+          "thKana": "ホン ナーム ユー ターン ナン クラップ"
+        },
+        "female": {
+          "th": "ห้องน้ำอยู่ทางนั้นค่ะ",
+          "thRoman": "hɔ̂ŋ náam yùu thaaŋ nán khâ",
+          "thKana": "ホン ナーム ユー ターン ナン カ"
+        }
+      }
+    },
+    {
+      "id": "service-098",
+      "type": "service",
+      "category": "接客の共通表現",
+      "categoryTh": "งานบริการทั่วไป",
+      "ja": "夜9時に閉まります。",
+      "jaHira": "よるくじにしまります。",
+      "jaRoman": "yoru kuji ni shimarimasu.",
+      "th": "ปิดสามทุ่ม",
+      "thRoman": "pìt sǎam thûm",
+      "thKana": "ピット サーム トゥム",
+      "ending": "statement",
+      "note": "",
+      "scene": "common",
+      "variants": {
+        "male": {
+          "th": "ปิดสามทุ่มครับ",
+          "thRoman": "pìt sǎam thûm khráp",
+          "thKana": "ピット サーム トゥム クラップ"
+        },
+        "female": {
+          "th": "ปิดสามทุ่มค่ะ",
+          "thRoman": "pìt sǎam thûm khâ",
+          "thKana": "ピット サーム トゥム カ"
+        }
+      }
+    },
+    {
+      "id": "service-099",
+      "type": "service",
+      "category": "接客の共通表現",
+      "categoryTh": "งานบริการทั่วไป",
+      "ja": "もうすぐ閉店です。",
+      "jaHira": "もうすぐへいてんです。",
+      "jaRoman": "mou sugu heiten desu.",
+      "th": "ใกล้ปิดร้านแล้ว",
+      "thRoman": "klâi pìt ráan lɛ́ɛo",
+      "thKana": "クライ ピット ラーン レーオ",
+      "ending": "statement",
+      "note": "",
+      "scene": "common",
+      "variants": {
+        "male": {
+          "th": "ใกล้ปิดร้านแล้วครับ",
+          "thRoman": "klâi pìt ráan lɛ́ɛo khráp",
+          "thKana": "クライ ピット ラーン レーオ クラップ"
+        },
+        "female": {
+          "th": "ใกล้ปิดร้านแล้วค่ะ",
+          "thRoman": "klâi pìt ráan lɛ́ɛo khâ",
+          "thKana": "クライ ピット ラーン レーオ カ"
+        }
+      }
+    },
+    {
+      "id": "service-100",
+      "type": "service",
+      "category": "接客の共通表現",
+      "categoryTh": "งานบริการทั่วไป",
+      "ja": "お気をつけてお帰りください。",
+      "jaHira": "おきをつけておかえりください。",
+      "jaRoman": "o ki o tsukete o kaeri kudasai.",
+      "th": "เดินทางปลอดภัย",
+      "thRoman": "dəən thaaŋ plɔ̀ɔt phai",
+      "thKana": "ドゥーン ターン プロート パイ",
+      "ending": "statement",
+      "note": "",
+      "scene": "common",
+      "variants": {
+        "male": {
+          "th": "เดินทางปลอดภัยครับ",
+          "thRoman": "dəən thaaŋ plɔ̀ɔt phai khráp",
+          "thKana": "ドゥーン ターン プロート パイ クラップ"
+        },
+        "female": {
+          "th": "เดินทางปลอดภัยค่ะ",
+          "thRoman": "dəən thaaŋ plɔ̀ɔt phai khâ",
+          "thKana": "ドゥーン ターン プロート パイ カ"
+        }
+      }
+    }
+  ]
+}

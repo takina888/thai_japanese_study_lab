@@ -1,0 +1,146 @@
+/* V33: comfortable tablet controls without restricting browser zoom. */
+#kanaDialog,
+#profileDialog {
+  max-height: calc(100vh - 24px);
+  max-height: calc(100dvh - 24px);
+  scroll-padding-block: 18px 80px;
+}
+button,
+select,
+summary {
+  touch-action: manipulation;
+}
+.kanaCharacters {
+  flex-wrap: wrap;
+}
+.kanaTop > *,
+.kanaSelectors > *,
+.headerActions > * {
+  min-width: 0;
+}
+.kanaSelectors select {
+  min-width: 0;
+}
+
+@media (min-width: 601px) and (max-width: 1366px), (any-pointer: coarse) {
+  .switch,
+  .toolBtn,
+  .speak,
+  .nav button,
+  .fav,
+  .unitPrimary,
+  .courseSelection button,
+  .jpHintToggle,
+  .quizHeading .toolBtn,
+  .kanaTop button,
+  .kanaScripts button,
+  .kanaStudyModes button,
+  .kanaChar,
+  .kanaReadingLetters button,
+  .kanaButtons button,
+  .kanaLoading button,
+  .kanaReadingListen,
+  .kanaReadingPrimary,
+  .kanaReadingSecondary,
+  .kanaReadingMistakes button,
+  .kanaActionBar button,
+  .dialogActions button {
+    min-height: 48px;
+    min-width: 44px;
+  }
+  #profileClose {
+    width: 48px;
+    height: 48px;
+  }
+  .kanaSelectors select,
+  .unitChooser select,
+  .serviceTools select,
+  #profileNickname {
+    min-height: 48px;
+    font-size: 16px;
+  }
+  .kanaTop button,
+  .kanaScripts button,
+  .kanaStudyModes button,
+  .kanaButtons button,
+  .kanaReadingListen,
+  .kanaReadingSecondary,
+  .kanaActionBar button,
+  .courseSelection button,
+  .jpHintToggle {
+    font-size: 16px;
+  }
+  .readingGuide summary,
+  .lessonSupplement summary,
+  .unitListDetails summary,
+  .browseTools summary,
+  .selfCheck summary,
+  .kanaHelp summary,
+  .kanaReadingReference summary {
+    min-height: 44px;
+    padding-block: 8px;
+  }
+  .kanaReadingProgress,
+  .kanaReadingNote,
+  .kanaReadingSoundNote,
+  .kanaReadingReference,
+  .kanaRound,
+  .kanaEntryNote,
+  .kanaWritten,
+  .kanaStatus,
+  #kanaDialog[data-course="thai"] .kanaEntryNote,
+  .kanaHelp {
+    font-size: 14px;
+  }
+  .kanaWritingSound #kanaSoundLabel,
+  .kanaReadingSoundLabel,
+  .kanaReadingOverall {
+    font-size: 13px;
+  }
+  .choice {
+    min-height: 56px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1366px) {
+  #kanaDialog:not([data-word-mode="true"]) {
+    width: min(680px, calc(100% - 32px));
+  }
+  #kanaDialog:not([data-word-mode="true"]) .kanaBoard {
+    width: min(100%, 360px);
+  }
+  .kanaInner {
+    padding-inline: 24px;
+  }
+  .kanaSelectors {
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .kanaSelectors label {
+    font-size: 15px;
+  }
+  .kanaReadingOptions button {
+    min-height: 96px;
+  }
+  #kanaDialog[data-course="thai"] .kanaReadingOptionThai {
+    font-size: 16px;
+  }
+  .kanaEntry {
+    min-height: 84px;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 1000px) {
+  .sectiongrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1366px) and (max-height: 820px) {
+  #kanaDialog:not([data-word-mode="true"]) .kanaBoard {
+    width: min(100%, 300px);
+  }
+  .kanaInner {
+    padding-top: 12px;
+  }
+}

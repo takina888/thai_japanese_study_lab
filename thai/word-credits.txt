@@ -1,0 +1,83 @@
+タイ語100単語 — なぞり書きの字形・出典
+
+字形
+Noto Serif Thai Regular, Version 2.000
+Copyright 2016 Google Inc. All Rights Reserved.
+Manufacturer: Monotype Imaging Inc.
+Designer: Monotype Design Team
+https://github.com/notofonts/thai
+
+SIL Open Font License 1.1
+全文: NotoSerifThai-OFL.txt（同じフォルダー）
+
+ループのあるタイ文字の字形を、単語全体の静的な見本として使っています。
+上や下に付く母音、声調記号、前置母音を含めて一つの単語として配置し、
+日本語の等幅マスには分けていません。フォントの輪郭は、書き順や
+筆運びを示すものではありません。筆順アニメーションには使用しません。
+
+表記・配置の参考資料
+Unicode Standard 17.0, Chapter 16, Thai
+https://www.unicode.org/versions/Unicode17.0.0/core-spec/chapter-16/
+
+W3C Thai Script Resources（Group Note Draft）
+https://www.w3.org/TR/thai-lreq/
+
+HarfBuzz Manual: Working with HarfBuzz clusters
+https://harfbuzz.github.io/working-with-harfbuzz-clusters.html
+
+--------------------------------------------------------------------------
+FONT PROVENANCE
+
+Bundled file: NotoSerifThai-Regular.ttf
+Original local asset: /usr/share/fonts/truetype/noto/NotoSerifThai-Regular.ttf
+Copied without modification from the available runtime font distribution.
+This is not claimed to be a newly downloaded release; the exact upstream
+commit of the runtime package is not established.
+
+Embedded family: Noto Serif Thai
+Embedded style: Regular
+Embedded unique ID: 2.000;GOOG;NotoSerifThai-Regular
+Embedded PostScript name: NotoSerifThai-Regular
+Embedded version: Version 2.000; ttfautohint (v1.8.3) -l 8 -r 50 -G 200 -x 14 -D thai -f none -a qsq -X ""
+Embedded license: SIL Open Font License, Version 1.1
+Embedded project URL: http://www.google.com/get/noto/
+File size: 45992 bytes
+SHA-256: 8e1bcaa4fef346b247092cf4327c4744eda2fa72afed96e2145dc30a3b04fdd1
+
+The existing 62 consonant/vowel assets, their Noto Looped Thai font, and their
+licenses are unchanged. The new word assets use the font named above.
+
+STATIC OUTLINE GENERATION
+
+Source words: dist/thai-word-content.js
+Output: dist/thai/word-tracing-forms.json
+Generator: scripts/build-thai-word-tracing.py
+
+Each complete Thai string is shaped by HarfBuzz using the font's OpenType
+tables, with monotone grapheme clusters. Its glyph IDs, offsets, and advances
+are then passed to fontTools to extract and combine the positioned outlines.
+Sara Am decomposition and tone/upper-vowel positioning are handled during
+shaping; input Thai spelling is not manually decomposed or reordered.
+
+The viewBox height is 400. The reference consonant height is approximately
+200 units; uniform scaling reduces it only when necessary to retain vertical
+mark space or fit the maximum width. Width is based on the shaped advance,
+normally at least 800 and at most 2000. A one-advance word may use 600.
+The painted outline retains at least 80 horizontal and 40 vertical units of
+padding. Short words receive additional whitespace, not horizontal stretching.
+
+Each layouts entry includes the exact source text to allow stale-asset
+detection. Its normalized segments are nonvisible horizontal practice regions
+derived from visible advancing glyphs. Zero-advance upper/lower/tone marks
+remain associated with their parent cluster and do not create separate cells.
+These regions do not clip the word, represent syllables, or prescribe a pen
+order. They must not be displayed as equal-width letter boxes.
+
+Reproduce (Python 3, fontTools, local HarfBuzz shared library, and Node):
+python scripts/build-thai-word-tracing.py
+
+Check exact reproduction without writing:
+python scripts/build-thai-word-tracing.py --check
+
+Inspect glyphs, mark placement, and practice-region ownership without writing:
+python scripts/build-thai-word-tracing.py --check --audit

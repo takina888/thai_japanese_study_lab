@@ -1,0 +1,72 @@
+WORD HANDWRITING: ADDITIONAL HIRAGANA SVGs
+
+File: word-extra-strokes.json
+Scope: 34 derived teaching glyphs (20 voiced, 5 semi-voiced, 9 small hiragana).
+These are local adaptations, not verbatim downloads of upstream extra glyphs.
+
+ORIGIN AND LICENSE
+
+The unchanged base file is stroke-order-hiragana.json, imported from the
+AKIGUSA V015.40 package. Its upstream project is Kyle's strokesvg:
+https://github.com/zhengkyl/strokesvg
+https://github.com/zhengkyl/strokesvg/blob/main/LICENSE
+
+The upstream SVGs derive from the Klee One font. Copyright 2020 The Klee
+Project Authors (https://github.com/fontworks-fonts/Klee).
+They are licensed under the SIL Open Font License, Version 1.1. The adapted
+SVGs in word-extra-strokes.json remain under that license. The upstream
+software notice is MIT, Copyright (c) 2024 Kyle.
+
+The complete notices and full license texts accompany these assets in:
+stroke-order-license.txt
+
+No font name or font binary has been changed. These teaching SVGs are not
+presented as original upstream glyphs or as handwriting validated by a teacher.
+
+ADAPTATIONS
+
+1. Voiced and semi-voiced kana retain each base outline, centerline, clip path,
+   and stroke group in its original order. The base forms are not rescaled.
+2. Dakuten are two explicit short down-right centerlines with matching clipped
+   round-ended outlines. The left dot is drawn before the right dot, after the
+   base character. Each dot is an independent stroke.
+3. Handakuten are one explicit circular centerline, starting at the bottom
+   (six o'clock) and continuing clockwise, after the base character. A clipped
+   ring outline has a transparent center. This uses the common one-stroke form;
+   a two-stroke brush-writing alternative is not modeled.
+4. Small kana reuse the base stroke groups and uniformly scale all their
+   outline/centerline geometry to 68%. Translation is (10, 310) in the original
+   1024-unit cell, placing them lower-left for horizontal word writing. The
+   reveal pen is scaled by the same factor. SVG arc segments may be normalized
+   to equivalent cubic approximations by fontTools during this transform.
+5. All local SVG IDs and fragment references are namespaced to the resulting
+   character's Unicode code point. Each asset is independent and uses no
+   external references, images, font loading, scripts, or event attributes.
+
+The new diacritic geometry was constructed locally; it was not extracted from
+the educational reference images. The existing ordered centerlines, rather
+than an automatic traversal of font outlines, determine base stroke order.
+
+RULE REFERENCES (FACTUAL GUIDANCE; NO IMAGES COPIED)
+
+Matsumoto Shoeido calligraphy teaching notes, dakuten direction:
+https://matsumotoshoeido-shodo.jp/blog/7573/
+
+Matsumoto Shoeido calligraphy teaching notes, handakuten start and direction:
+https://matsumotoshoeido-shodo.jp/blog/7593/
+
+Froebel-kan handwriting guidance, small-kana position in horizontal writing:
+https://kinderbook.froebel-kan.co.jp/images/okurimono/pdf/4MTrmIKcqWHWvE8kyvowrv4kvJetqepEVYFHSGhJ.pdf
+
+REPRODUCIBILITY
+
+Generator: scripts/build-word-extra-strokes.py (Python 3 and fontTools).
+Run: python scripts/build-word-extra-strokes.py
+Check without changes: python scripts/build-word-extra-strokes.py --check
+
+Base hiragana SHA-256:
+1d319f03e7d3fe5d3353cdbcc7fecc6abfe168f7d6d5b8519e8f71c72a43d076
+
+The generator does not change the original clean-kana data or its license.
+Static shape, pen width, clipping, local references, ordered stroke counts,
+and partial drawing stages are checked for these 34 derived assets.

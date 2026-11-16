@@ -1,0 +1,32 @@
+THAI × JAPANESE NAVI — タイ文字の読み練習
+確認日：2026-11-12
+
+対象：子音44字、基本母音の短長9組（18種類）。
+この読みテストは、子音は基本の頭子音、母音は音質と長短を練習します。
+末子音・声調・二重母音・単語ごとの例外をすべて学び終えたことを示すテストではありません。
+発音表記とカタカナは学習用の補助であり、厳密なIPA表記ではありません。
+子音の音声例には母音を添えています。文字名全体の音声は、参考欄に分けています。
+音声は端末・ブラウザに利用可能なタイ語の読み上げ音声を使います。
+
+参考資料（文字・音の事実関係の確認。本文や音声の転載ではありません）：
+
+チュラーロンコーン大学言語学科公開：Principles of Romanization for Thai Script by Transcription Method
+https://www.arts.chula.ac.th/~ling/tts/principles_eng.pdf
+頭子音と発音の対応、有気音、ฑの読み分け。
+
+タマサート大学公開：Thai Alphabet
+https://thaiarc.tu.ac.th/thai/thindex.htm
+文字の名前と、同音の文字を区別するために添える語。
+
+DLTV：基本母音の短長9組
+https://dltv.ac.th/utils/files/download/65641
+
+語研・中山玲子『入門タイ語の教科書』ためし読み、発音と文字編
+https://www.goken-net.co.jp/goken_sample/387.pdf
+日本語話者向けの母音・頭子音・表記の確認。
+
+Northern Illinois University, SEAsite: Spoken Thai, Unit 2, Hints
+https://seasite.niu.edu/Thai/spokenthai/unit2/hints.htm
+母音の長短、ə/əəの学習表記、有気音と声門閉鎖音。
+
+文字名と字形の出典は、同じフォルダの credits.txt も参照してください。

@@ -1,0 +1,119 @@
+.kanaEntry{display:flex;align-items:center;gap:16px;width:100%;margin-top:12px;padding:14px 18px;text-align:left;border:1px solid #b8caba;border-radius:3px;background:#edf2e9;color:#285e52;font:inherit;min-height:76px}.kanaEntryGlyph{font-family:serif;font-size:34px;line-height:1}.kanaEntry b{display:block;font-size:17px;font-weight:650}.kanaEntry small{display:block;font-size:13px;color:#617b6b}.kanaEntryArrow{margin-left:auto;font-size:25px}.kanaEntry:hover{background:#e2ecdf}
+#kanaDialog{padding:0;width:min(560px,calc(100% - 24px));max-height:calc(100dvh - 24px);border:1px solid #c7d4c5;border-radius:8px;background:#f8f7f2;color:#1e3538;overflow:auto;overscroll-behavior:contain;box-shadow:0 24px 90px #091f3555}#kanaDialog::backdrop{background:#163b36b0;backdrop-filter:blur(3px)}body:has(#kanaDialog[open]){overflow:hidden}.kanaInner{padding:18px 24px 16px}.kanaTop{display:flex;align-items:center;justify-content:space-between;gap:10px}.kanaTop h2{font-family:inherit;font-size:21px;letter-spacing:0;font-weight:650;line-height:1.4}.kanaTop button{border:0;background:transparent;color:#285e52;font:inherit;font-size:13px;min-height:44px;padding:6px}.kanaScripts{display:grid;grid-template-columns:1fr 1fr;gap:0;margin:12px 0}.kanaScripts button{border:1px solid #a8bda9;background:#fffefa;color:#366651;font:inherit;font-size:15px;min-height:44px;padding:8px}.kanaScripts button+button{border-left:0}.kanaScripts button[aria-pressed=true]{background:#27665e;color:#fff;box-shadow:inset 0 -3px 0 #d1ad6a}.kanaSelectors{display:flex;gap:16px;justify-content:space-between;margin:10px 0}.kanaSelectors label{display:flex;align-items:center;gap:7px;font-size:13px;color:#516d5c;min-width:0}.kanaSelectors select{font:inherit;font-size:16px;border:1px solid #b8caba;background:#fffefa;border-radius:3px;color:#1e3538;padding:7px;min-height:42px;max-width:100%}.kanaCharacters{display:flex;justify-content:center;gap:8px;margin:12px 0}.kanaChar{position:relative;min-width:42px;min-height:42px;border:1px solid #c9d4c5;background:#fffefa;color:#284a3e;border-radius:3px;font:inherit;font-size:21px;line-height:1.2;padding:7px 10px}.kanaChar[aria-pressed=true]{background:#e0eddf;border:2px solid #437a64;padding:6px 9px}.kanaChar.hasWritten:after{content:'';position:absolute;bottom:3px;left:calc(50% - 2px);width:4px;height:4px;border-radius:50%;background:#4f8c61}.kanaChar.isPending:after{content:'';position:absolute;bottom:3px;left:calc(50% - 2px);width:4px;height:4px;border-radius:50%;background:#bc974f}.kanaCurrent{display:flex;align-items:center;justify-content:center;gap:12px;margin:4px 0 10px}.kanaCurrent strong{font-family:serif;font-size:30px;font-weight:500;line-height:1}.kanaCurrent span{font-size:15px;color:#56705d}.kanaRound{text-align:center;color:#647a6a;font-size:12px;margin-bottom:7px}.kanaBoard{position:relative;width:min(100%,310px);aspect-ratio:1;margin:0 auto;border:1px solid #b3c4b1;border-radius:6px;overflow:hidden;background:linear-gradient(to right,transparent calc(50% - .5px),#e4e9df calc(50% - .5px),#e4e9df calc(50% + .5px),transparent calc(50% + .5px)),linear-gradient(to bottom,transparent calc(50% - .5px),#e4e9df calc(50% - .5px),#e4e9df calc(50% + .5px),transparent calc(50% + .5px)),#fffefa;isolation:isolate}.kanaBoard canvas,.kanaModel{position:absolute;inset:0;width:100%;height:100%;display:block}.kanaBoard canvas{z-index:2;touch-action:none;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none;cursor:crosshair}.kanaModel{z-index:1;pointer-events:none;--shadow:#d7dfd1;--stroke:#b88a35}.kanaModel svg{width:100%;height:100%;display:block}.kanaBoard.withoutGuide:not(.isPlaying) .kanaModel{visibility:hidden}.kanaBoard.isPlaying canvas{opacity:.25}.kanaBoard.isPlaying .kanaModel{visibility:visible}.kanaStrokeStatus{position:absolute;right:7px;top:5px;z-index:3;font-size:12px;color:#735a2e;background:#fffefaee;padding:0 4px;pointer-events:none}.kanaStrokeStatus:empty{display:none}.kanaLoading{position:absolute;inset:0;z-index:4;background:#fffefaed;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;gap:10px;padding:20px;font-size:14px}.kanaButtons{display:flex;justify-content:center;gap:6px;flex-wrap:wrap;margin:10px 0}.kanaButtons button,.kanaLoading button{font:inherit;font-size:13px;min-height:42px;padding:7px 10px;border:1px solid #c0cfbd;background:#fffefa;color:#386450;border-radius:3px}.kanaButtons .kanaOrder{background:#f0eadc;border-color:#dbc8a5;color:#735b27}.kanaButtons button[aria-pressed=true].kanaOrder{background:#e2cb9c}.kanaEditButtons{margin:4px 0 10px}.kanaEditButtons button{border-color:transparent;background:transparent;color:#59715c}.kanaActionBar{display:flex;gap:10px;position:sticky;bottom:-16px;background:#f8f7f2;padding:10px 0 8px;z-index:5}.kanaActionBar button{font:inherit;min-height:48px;border-radius:3px;padding:9px 14px;font-size:15px}.kanaActionBar .kanaDone{flex:1;background:#27665e;color:white;border:1px solid #27665e;font-weight:650}.kanaActionBar .kanaSkip{border:1px solid #bac9b5;background:#fffefa;color:#4a6a54}.kanaStatus{font-size:12px;color:#627b64;margin:3px 0;text-align:center}.kanaStatus:empty{display:none}.kanaWritten{text-align:center;color:#58725c;font-size:13px;margin:3px 0 6px}.kanaHelp{font-size:12px;color:#637867;border-top:1px solid #d7e0d2;padding-top:8px;margin-top:6px}.kanaHelp summary{cursor:pointer;min-height:30px}.kanaHelp p{margin:6px 0;line-height:1.8}.kanaHelp a{color:#3e735c}.kanaStorage{font-size:12px;color:#8a641c;background:#faf1d8;padding:7px 10px}.kanaSelectors select:focus-visible,#kanaDialog button:focus-visible{outline:3px solid #80c7f3;outline-offset:2px}
+@media(max-width:600px){#kanaDialog{width:calc(100% - 16px);max-height:calc(100dvh - 16px)}.kanaInner{padding:12px 14px}.kanaTop h2{font-size:19px}.kanaTop button{font-size:12px}.kanaSelectors{gap:10px}.kanaSelectors label{gap:5px;font-size:12px}.kanaSelectors select{font-size:15px;padding:6px}.kanaBoard{width:min(100%,285px)}.kanaScripts{margin:8px 0}.kanaCharacters{margin:9px 0;gap:7px}.kanaButtons{gap:5px}.kanaButtons button{font-size:12px;padding:7px 8px}.kanaActionBar{bottom:-12px}.kanaCurrent{margin-bottom:6px}.kanaEntry{padding:12px 14px}.kanaEntry b{font-size:16px}}
+@font-face{font-family:NaviThaiWriting;src:url('thai/NotoLoopedThai-Regular.ttf') format('truetype');font-style:normal;font-weight:400;font-display:swap}
+@font-face{font-family:NaviThaiWordWriting;src:url('thai/NotoSerifThai-Regular.ttf') format('truetype');font-style:normal;font-weight:400;font-display:swap}
+.kanaEntryGlyph[lang=th],.kanaChar[lang=th],#kanaCharacter[lang=th]{font-family:NaviThaiWriting,"Noto Sans Thai",sans-serif;line-height:1.65}
+#kanaDialog[data-course=thai] .kanaCurrent{flex-wrap:wrap;gap:4px 12px}
+#kanaDialog[data-course=thai] #kanaReading{font-size:14px;text-align:center;overflow-wrap:anywhere}
+#kanaDialog[data-course=thai] .kanaChar{font-size:24px;min-width:48px;padding-top:3px;padding-bottom:3px}
+#kanaDialog[data-course=thai] .kanaChar[aria-pressed=true]{padding-top:2px;padding-bottom:2px}
+#kanaDialog[data-course=thai] #kanaRow{font-family:NaviThaiWriting,sans-serif}
+.kanaEntryNote{text-align:center;font-size:12px;line-height:1.6;color:#766744;margin:0 0 6px}
+.kanaPronunciation{margin:6px 0}.kanaPronunciation button{font-size:15px;font-weight:600;padding:7px 16px;background:#e6efe7;border-color:#a8bfac;color:#245b4e}
+.kanaWritingSound{min-width:0;max-width:100%;line-height:1.6}.kanaWritingSound>span{display:block}.kanaWritingSound #kanaSoundLabel{font-size:11px;font-weight:600;color:#526d5d;margin-bottom:2px}.kanaWritingSound [hidden],#kanaNameReference[hidden]{display:none!important}
+#kanaDialog[data-course=thai] .kanaWritingSound{flex:1;min-width:180px}#kanaDialog[data-course=thai] #kanaReading{text-align:left;font-size:16px}#kanaDialog[data-course=thai] #kanaCharacter{font-size:38px;flex-shrink:0}#kanaDialog[data-course=thai] .kanaEntryNote{color:#496354;font-size:13px}
+@media(max-width:350px){.kanaInner{padding:10px}.kanaSelectors{gap:6px}.kanaSelectors label{flex-direction:column;align-items:flex-start;gap:2px}.kanaChar{min-width:39px;min-height:42px;padding:7px}.kanaChar[aria-pressed=true]{padding:6px}.kanaTop h2{font-size:17px}.kanaTop button{font-size:11px}.kanaScripts button{font-size:14px}.kanaActionBar button{font-size:13px;padding:9px 10px}.kanaBoard{width:min(100%,260px)}}
+@media(max-height:760px) and (min-width:351px){.kanaBoard{width:min(100%,240px)}.kanaInner{padding-top:8px}.kanaCharacters{margin:6px 0}.kanaScripts{margin:5px 0}.kanaSelectors{margin:6px 0}.kanaButtons{margin:6px 0}.kanaRound{margin-bottom:4px}}
+.kanaScripts{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:minmax(0,1fr)}
+.kanaScripts button[hidden]+button{border-left:1px solid #a8bda9}
+.kanaWordHeader{display:grid;grid-template-columns:64px minmax(0,1fr);align-items:center;gap:2px 14px;margin:12px 0 8px;padding:12px 16px;background:#edf2e7;border:1px solid #d5dfcd;border-radius:6px}
+.kanaWordEmoji{font-size:50px;line-height:1.3;text-align:center}
+.kanaWordCopy{min-width:0}
+#kanaWordText{display:block;font-size:27px;font-weight:650;letter-spacing:.08em;line-height:1.5;overflow-wrap:anywhere}
+#kanaWordRoman{display:block;font-size:20px;font-weight:650;line-height:1.5;color:#285f52;overflow-wrap:anywhere}
+.kanaWordAid{font-size:17px;line-height:1.6;overflow-wrap:anywhere}.kanaWordAidLabel{font-size:13px;color:#617565;margin-right:3px}
+#kanaWordReading{font-size:17px;line-height:1.6;color:#365e4f}
+#kanaWordMeaning{font-size:17px;line-height:1.6;color:#536d5c}
+#kanaWordComplete{grid-column:1/-1;font-size:14px;color:#28664c;margin:3px 0 0;text-align:center}
+#kanaWordComplete:empty{display:none}
+#kanaDialog[data-word-mode=true] .kanaSelectors>label:first-child{width:100%}
+#kanaDialog[data-word-mode=true] #kanaRow{min-width:0;flex:1;width:0}
+#kanaDialog[data-word-mode=true] .kanaCurrent{display:none}
+#kanaDialog[data-word-mode=true]{width:min(1100px,calc(100% - 24px));max-width:calc(100% - 16px)}
+#kanaDialog[data-word-mode=true] .kanaInner{max-width:1060px;margin:0 auto}
+#kanaDialog[data-word-mode=true] .kanaWordHeader{max-width:560px;margin-left:auto;margin-right:auto}
+#kanaDialog[data-word-mode=true] .kanaSelectors{max-width:560px;margin-left:auto;margin-right:auto}
+#kanaDialog[data-word-mode=true] .kanaScripts{max-width:560px;margin-left:auto;margin-right:auto}
+#kanaDialog[data-word-mode=true] .kanaBoard{width:min(100%,calc(var(--kana-columns,1) * 180px));aspect-ratio:var(--kana-aspect,var(--kana-columns,1)) / 1;border-radius:4px;background:linear-gradient(to right,transparent calc(100% - 1px),#cdd8c5 calc(100% - 1px)) 0 0 / calc(100% / var(--kana-columns,1)) 100% repeat-x,linear-gradient(to bottom,transparent calc(50% - .5px),#e4e9df calc(50% - .5px),#e4e9df calc(50% + .5px),transparent calc(50% + .5px)),#fffefa}
+#kanaDialog[data-word-mode=true] .kanaActionBar{max-width:560px;margin-left:auto;margin-right:auto}
+#kanaDialog[data-word-mode=true] .kanaCharacters{flex-wrap:wrap;gap:6px}
+#kanaDialog[data-word-mode=true] .kanaChar{min-width:38px;padding:7px 9px}
+#kanaDialog[data-word-mode=true] .kanaChar[aria-pressed=true]{padding:6px 8px}
+#kanaDialog[data-word-mode=true] .kanaActionBar .kanaSkip{max-width:35%;font-size:13px;line-height:1.45}
+@media(max-width:600px){.kanaWordHeader{grid-template-columns:48px minmax(0,1fr);gap:2px 10px;padding:8px 10px;margin:8px 0 6px}.kanaWordEmoji{font-size:42px}#kanaWordText{font-size:24px}#kanaWordRoman{font-size:19px}#kanaWordReading,#kanaWordMeaning{font-size:16px}.kanaScripts button{padding:7px 3px;font-size:13px}#kanaDialog[data-word-mode=true] .kanaCharacters{gap:5px;margin:6px 0}#kanaDialog[data-word-mode=true] .kanaChar{min-width:36px;padding:7px}#kanaDialog[data-word-mode=true] .kanaChar[aria-pressed=true]{padding:6px}}
+@media(max-width:350px){#kanaDialog[data-word-mode=true] .kanaSelectors>label:first-child{flex-direction:row;align-items:center;gap:8px}.kanaWordHeader{grid-template-columns:40px minmax(0,1fr);gap:2px 8px}.kanaWordEmoji{font-size:36px}#kanaWordText{font-size:22px}.kanaScripts button{font-size:12px}#kanaDialog[data-word-mode=true] .kanaChar{min-width:34px;font-size:20px;padding:7px 6px}#kanaDialog[data-word-mode=true] .kanaChar[aria-pressed=true]{padding:6px 5px}}
+
+#kanaDialog[data-course=thaiWords] .kanaBoard{width:min(100%,calc(var(--kana-aspect,2) * 190px));background:linear-gradient(to bottom,transparent calc(72% - .5px),#e4e9df calc(72% - .5px),#e4e9df calc(72% + .5px),transparent calc(72% + .5px)),#fffefa}
+#kanaDialog[data-course=thaiWords] #kanaWordText{font-family:NaviThaiWordWriting,"Noto Serif Thai",serif;font-size:34px;font-weight:400;line-height:1.65;letter-spacing:normal;overflow-wrap:normal}
+#kanaDialog[data-course=thaiWords] #kanaWordMeaning{font-size:17px}
+#kanaDialog[data-course=thaiWords] #kanaWordReading{font-size:17px;line-height:1.7}
+#kanaDialog[data-course=thaiWords] #kanaRow{font-family:NaviThaiWordWriting,serif}
+@media(max-width:600px){#kanaDialog[data-course=thaiWords] #kanaWordText{font-size:30px}#kanaDialog[data-course=thaiWords] #kanaWordMeaning,#kanaDialog[data-course=thaiWords] #kanaWordReading{font-size:16px}}
+
+#kanaReadingPanel[hidden],#kanaReadingPanel [hidden],#kanaWritingPanel[hidden],#kanaStudyModes[hidden]{display:none!important}
+.kanaStudyModes{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:12px 0}
+.kanaStudyModes button{font:inherit;font-size:14px;min-height:44px;padding:8px;border:1px solid #b9c9b9;border-radius:4px;background:#fffefa;color:#396451}
+.kanaStudyModes button[aria-pressed=true]{background:#e3eee3;border-color:#41775e;color:#204d3c;font-weight:650}
+.kanaReadingPanel{padding:0 0 10px}
+.kanaReadingProgress{font-size:13px;line-height:1.6;color:#476b56;margin:6px 0}
+.kanaReadingProgressBar{height:7px;border-radius:8px;background:#e1e8dc;overflow:hidden}
+.kanaReadingProgressBar>div{width:0;height:100%;background:#4d866b;transition:width .25s}
+.kanaReadingSteps{list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;padding:0;margin:14px 0;color:#788b78;font-size:12px;line-height:1.5;text-align:center}
+.kanaReadingSteps li{padding:5px 0 7px;border-bottom:2px solid #d7e0d1}
+.kanaReadingSteps li.active,.kanaReadingSteps li.isActive,.kanaReadingSteps li[aria-current=step]{font-weight:700;color:#285e49;border-color:#4c8166}
+.kanaReadingLetters{display:flex;justify-content:center;gap:7px;flex-wrap:wrap;margin:15px 0 5px}
+.kanaReadingLetters button{position:relative;min-width:44px;min-height:46px;padding:6px 8px;font:inherit;font-size:22px;line-height:1.4;color:#315d47;border:1px solid #bbcfb8;border-radius:4px;background:#fffefa}
+.kanaReadingLetters button[aria-pressed=true]{border:2px solid #447960;padding:5px 7px;background:#e7efe1}
+.kanaReadingLetters button small{display:block;font-size:11px;line-height:1.2}
+.kanaReadingCard{text-align:center;padding:4px 12px 10px}
+#kanaReadingGlyph,#kanaReadingQuestion{display:block;font-family:"Yu Kyokasho","Hiragino Mincho ProN","Yu Mincho",serif;font-size:92px;font-weight:500;line-height:1.45;color:#20473a;text-align:center}
+#kanaReadingRoman{display:block;font-size:26px;font-weight:650;line-height:1.5;color:#285e49}
+#kanaReadingThai{display:block;font-size:19px;line-height:1.65;color:#526f5c}
+.kanaReadingPanel button{cursor:pointer}
+.kanaReadingPanel button:disabled{cursor:default;opacity:.7}
+.kanaReadingPrimary,.kanaReadingSecondary,.kanaReadingListen{font:inherit;border:1px solid #bbcdb8;border-radius:4px;min-height:46px;padding:9px 13px;line-height:1.5}
+.kanaReadingPrimary{display:block;width:100%;background:#27665e;color:#fff;border-color:#27665e;font-size:16px;font-weight:650;margin-top:12px}
+.kanaReadingSecondary{display:block;width:100%;background:#fffefa;color:#36644e;font-size:14px;margin-top:9px}
+.kanaReadingListen{display:block;margin:6px auto;background:#e6efe7;color:#245b4e;font-size:14px;font-weight:600}
+.kanaReadingNote{font-size:12px;text-align:center;line-height:1.7;color:#6a7e68;margin:10px 0}
+.kanaReadingCounter{display:block;font-size:13px;color:#6a806d;text-align:center}
+.kanaReadingOptions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:9px 0}
+.kanaReadingOptions button{min-width:0;min-height:81px;padding:10px;font:inherit;font-size:21px;line-height:1.5;border:1px solid #c5d4bf;border-radius:5px;background:#fffefa;color:#284f3e;overflow-wrap:anywhere}
+.kanaReadingOptions button strong,.kanaReadingOptions button .roman{display:block;font-size:24px;line-height:1.35}
+.kanaReadingOptions button small,.kanaReadingOptions button .thai{display:block;font-size:16px;color:#5b745f}
+.kanaReadingOptionRoman{display:block;font-size:24px;font-weight:650;line-height:1.35}
+.kanaReadingOptionThai{display:block;font-size:16px;color:#5b745f;line-height:1.65}
+.kanaReadingMistakeGlyph{font-size:20px;margin-right:6px}.kanaReadingMistakeRoman{font-weight:650;margin-right:6px}.kanaReadingMistakeThai{font-size:14px}
+.kanaReadingLetter.passed:after{content:'✓';position:absolute;top:-7px;right:-4px;font-size:11px;background:#4e805d;color:#fff;border-radius:50%;width:16px;height:16px;line-height:16px;text-align:center}
+.kanaReadingOptions button.correct,.kanaReadingOptions button.isCorrect{border:2px solid #528a67;background:#e3f0df;padding:9px;opacity:1}
+.kanaReadingOptions button.wrong,.kanaReadingOptions button.isWrong{border:2px solid #b68557;background:#fff0de;padding:9px;opacity:1}
+.kanaReadingFeedback{min-height:24px;font-size:14px;line-height:1.65;margin:8px 0;text-align:center;color:#466b52}
+.kanaReadingResult{text-align:center;padding-top:12px}
+.kanaReadingResult h3{font:inherit;font-size:22px;font-weight:650;margin:14px 0 8px;line-height:1.6}
+.kanaReadingResult p{font-size:15px;line-height:1.8;margin:6px 0 14px}
+.kanaReadingStamp{display:flex;align-items:center;justify-content:center;width:84px;height:84px;margin:3px auto;border:3px double #53845c;border-radius:50%;background:#eaf3df;color:#386644;font-size:17px;font-weight:750;line-height:1.4}
+.kanaReadingMistakes{font-size:13px;line-height:1.7;color:#6b725c;margin-bottom:14px}
+.kanaReadingMistakes button{font:inherit;min-height:42px;margin:4px;padding:6px 12px;border:1px solid #d4c7ac;background:#fcf4e6;color:#6b5a36;border-radius:4px}
+.kanaReadingPanel button:focus-visible{outline:3px solid #80c7f3;outline-offset:2px}
+#kanaDialog[data-kana-mode=reading] .kanaSelectors{margin:7px 0}
+@media(max-width:350px){.kanaStudyModes{gap:5px;margin:8px 0}.kanaStudyModes button{font-size:12px;padding:7px 3px}.kanaReadingLetters{gap:5px}.kanaReadingLetters button{min-width:41px;font-size:21px}.kanaReadingProgress{font-size:12px}.kanaReadingSteps{gap:5px;font-size:11px;margin:10px 0}.kanaReadingOptions{gap:7px}.kanaReadingOptions button{min-height:74px}.kanaReadingPrimary{font-size:14px}#kanaReadingGlyph,#kanaReadingQuestion{font-size:80px}}
+@media(prefers-reduced-motion:reduce){.kanaReadingProgressBar>div{transition:none}}
+@media(max-width:350px){#kanaDialog[data-kana-mode=reading] .kanaSelectors label{flex-direction:row;align-items:center;gap:7px}.kanaReadingCard{padding:0 8px 6px}.kanaReadingLetters{margin-top:10px}#kanaReadingGlyph,#kanaReadingQuestion{line-height:1.2}}
+.kanaReadingOverall{margin:4px 0 0;font-size:11px;color:#657b66;line-height:1.5}
+.kanaReadingSoundLabel{display:block;font-size:12px;color:#687d68;line-height:1.6}
+.kanaReadingExample{font-size:14px;line-height:1.6;color:#385e4b;margin:8px 0 0;overflow-wrap:anywhere}
+.kanaReadingSoundNote{font-size:12px;line-height:1.7;color:#657761;margin:8px 0}
+.kanaReadingReference{border-top:1px solid #d8e1d1;margin:13px 0 0;padding-top:5px;font-size:12px;color:#64745d;line-height:1.7}
+.kanaReadingReference summary{cursor:pointer;padding:8px 0;min-height:40px}
+.kanaReadingReference p{margin:5px 0;overflow-wrap:anywhere}
+.kanaReadingReference a{display:block;color:#45745a;margin:8px 0}
+#kanaDialog[data-course=thai] #kanaReadingGlyph,#kanaDialog[data-course=thai] #kanaReadingQuestion{font-family:NaviThaiWriting,"Noto Sans Thai",sans-serif;font-size:80px;line-height:1.5;font-weight:400}
+#kanaDialog[data-course=thai] .kanaReadingLetters button,#kanaDialog[data-course=thai] .kanaReadingMistakeGlyph{font-family:NaviThaiWriting,"Noto Sans Thai",sans-serif;line-height:1.6}
+#kanaDialog[data-course=thai] #kanaReadingThai{font-size:17px;line-height:1.65}
+#kanaDialog[data-course=thai] .kanaReadingOptionThai{font-size:14px;line-height:1.65}
+#kanaDialog[data-course=thai] .kanaReadingOptions button{min-height:108px}
+#kanaDialog[data-course=thai] .kanaReadingMistakes button{text-align:left;overflow-wrap:anywhere}
+@media(max-width:600px){#kanaDialog[data-course=thai] .kanaReadingCard{display:grid;grid-template-columns:80px minmax(0,1fr);gap:0 10px;text-align:left;padding:6px 0}#kanaDialog[data-course=thai] #kanaReadingGlyph{grid-column:1;grid-row:1 / span 4;align-self:center;font-size:76px}#kanaDialog[data-course=thai] .kanaReadingCard>:not(#kanaReadingGlyph){grid-column:2}#kanaDialog[data-course=thai] .kanaReadingSteps{margin:8px 0}#kanaDialog[data-course=thai] .kanaReadingLetters{margin:10px 0 5px}#kanaDialog[data-course=thai] .kanaReadingExample{margin-top:4px;font-size:13px}}
+@media(max-width:350px){#kanaDialog[data-course=thai] #kanaReadingGlyph,#kanaDialog[data-course=thai] #kanaReadingQuestion{font-size:68px}#kanaDialog[data-course=thai] #kanaReadingThai{font-size:15px}#kanaDialog[data-course=thai] .kanaReadingOptionThai{font-size:13px}.kanaReadingSoundNote{font-size:11px}.kanaReadingExample{font-size:13px}}
+@media(max-width:600px){#kanaDialog[data-course=thai] #kanaReadingPanel[data-script=vowel] .kanaReadingCard{grid-template-columns:minmax(0,1fr);text-align:center}#kanaDialog[data-course=thai] #kanaReadingPanel[data-script=vowel] .kanaReadingCard>*{grid-column:1;grid-row:auto}#kanaDialog[data-course=thai] #kanaReadingPanel[data-script=vowel] #kanaReadingGlyph,#kanaDialog[data-course=thai] #kanaReadingPanel[data-script=vowel] #kanaReadingQuestion{font-size:56px;line-height:1.4}}
